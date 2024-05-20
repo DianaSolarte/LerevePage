@@ -1,0 +1,59 @@
+<template>
+  <div class="max-w-xl mx-auto py-12">
+    <h2 class="text-2xl font-semibold mb-4">¿Listo para maximizar tu patrimonio?</h2>
+    <p class="mb-8">Nuestro equipo de expertos está listo para ayudarle a alcanzar sus objetivos financieros y patrimoniales. ¡No dude en ponerse en contacto con nosotros para una consulta gratuita!</p>
+    
+    <form @submit.prevent="submitForm" class="space-y-4">
+      <div>
+        <label for="nombre" class="block text-sm font-medium text-gray-700">Nombre</label>
+        <input type="text" id="nombre" v-model="formData.nombre" class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md">
+      </div>
+
+      <div>
+        <label for="apellido" class="block text-sm font-medium text-gray-700">Apellido</label>
+        <input type="text" id="apellido" v-model="formData.apellido" class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md">
+      </div>
+
+      <div>
+        <label for="email" class="block text-sm font-medium text-gray-700">Mail Empresarial</label>
+        <input type="email" id="email" v-model="formData.email" class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md">
+      </div>
+
+      <div>
+        <label for="mensaje" class="block text-sm font-medium text-gray-700">Mensaje</label>
+        <textarea id="mensaje" v-model="formData.mensaje" rows="4" class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md"></textarea>
+      </div>
+
+      <div>
+        <button type="submit" 
+        class="inline-flex items-center px-4 py-2 rounded-full text-base font-medium text-white bg-blue-500 hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500">
+  Enviar
+</button>
+      </div>
+    </form>
+
+    <p class="mt-8 text-center">Llámanos: +57 (601) 612-8418 <br> Escríbenos: servicioalcliente@lereve.com.co <br> Encuéntranos: Bogotá, Cr 7 Bis 124-26 Colombia. <br> <br> Todos los campos son obligatorios. Al enviar el formulario, aceptas los Términos y Condiciones y la Política de Privacidad. </p>
+  </div>
+</template>
+
+<script>
+export default {
+  name: 'ContactForm',
+  data() {
+    return {
+      formData: {
+        nombre: '',
+        apellido: '',
+        email: '',
+        mensaje: ''
+      }
+    };
+  },
+  methods: {
+    submitForm() {
+      // Aquí puedes enviar los datos del formulario a través de una petición HTTP o hacer cualquier otra acción que necesites
+      console.log('Formulario enviado:', this.formData);
+    }
+  }
+}
+</script>
