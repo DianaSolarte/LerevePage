@@ -4,6 +4,6 @@
 @tailwind utilities;
 
 .content-container {
-  margin-left: 0.5px;
-  margin-right: 0.5px;
+  margin-left: 1px;
+  margin-right: 1px;
 }

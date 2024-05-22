@@ -1,4 +1,4 @@
-<template>
+<template> <!-- HTML -->
   <div class="relative min-h-screen">
     <Navbar class="navbar"/>
     <div class="container bg-white p-8 rounded-lg shadow-lg max-w-3xl mx-auto my-12">
@@ -20,7 +20,7 @@
   </div>
 </template>
 
-<script>
+<script>  /* js */
 import Navbar from '../layouts/Navbar.vue';
 import Footer from '../layouts/Footer.vue';
 import Whatsapp from '../layouts/Whatsapp.vue';
@@ -35,6 +35,6 @@ export default {
 }
 </script>
 
-<style scoped>
+<style scoped> 
 /* Aquí puedes agregar estilos adicionales específicos de esta página si lo necesitas */
 </style>
