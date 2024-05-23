@@ -119,7 +119,6 @@ const implementacionVisible = ref(false);
     max-width: 1400px; 
     
 }
-
 .pasos {
   background-color: #232323;
   border-radius: 24px; /* Agregamos el radio de borde */
