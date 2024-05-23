@@ -22,7 +22,7 @@ const router = createRouter({
   history: createWebHashHistory(),
   routes: [
     {
-      path: '/', /* RUTA  */
+      path: '#/', /* RUTA  */
       name: 'Home',
       components: {
         default: HomeView,
@@ -32,7 +32,7 @@ const router = createRouter({
       },
     },
     {
-      path: '/form',
+      path: '#/form',
       name: 'Form',
       components: {
         default: FormView,
@@ -43,7 +43,7 @@ const router = createRouter({
       },
     },
     {
-      path: '/tyc',
+      path: '#/tyc',
       name: 'TycView',
       components: {
         default: TycView,
@@ -53,7 +53,7 @@ const router = createRouter({
       },
     },
     {
-      path: '/attributions',
+      path: '#/attributions',
       name: 'AttributionsView',
       components: {
         default: AttributionsView,
@@ -63,7 +63,7 @@ const router = createRouter({
       },
     },
     {
-      path: '/servicessix',
+      path: '#/servicessix',
       name: 'ServicesviewSix',
       components: {
         default: ServicesSix,
@@ -73,7 +73,7 @@ const router = createRouter({
       },
     },
     {
-      path: '/servicesone',
+      path: '#/servicesone',
       name: 'ServicesViewOne',
       components: {
         default: ServicesViewOne,
@@ -83,7 +83,7 @@ const router = createRouter({
       },
     },
     {
-      path: '/servicestwo',
+      path: '#/servicestwo',
       name: 'ServicesViewTwo',
       components: {
         default: ServicesViewTwo,
@@ -93,7 +93,7 @@ const router = createRouter({
       },
     },
     {
-      path: '/servicesthree',
+      path: '#/servicesthree',
       name: 'ServicesViewThree',
       components: {
         default: ServicesViewThree,
@@ -103,7 +103,7 @@ const router = createRouter({
       },
     },
     {
-      path: '/servicesfour',
+      path: '#/servicesfour',
       name: 'ServicesViewFour',
       components: {
         default: ServicesViewFour,
@@ -113,7 +113,7 @@ const router = createRouter({
       },
     },
     {
-      path: '/servicesfive',
+      path: '#/servicesfive',
       name: 'ServicesViewFive',
       components: {
         default: ServicesViewFive,
@@ -123,7 +123,7 @@ const router = createRouter({
       },
     },
     {
-      path: '/aboutus', // Ruta para la vista "AboutUs"
+      path: '#/aboutus', // Ruta para la vista "AboutUs"
       name: 'AboutUs',
       components: {
         default: AboutUs,

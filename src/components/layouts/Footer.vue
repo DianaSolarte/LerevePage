@@ -35,12 +35,12 @@
           <div class="w-full mb-4">
            
             <ul>
-              <li><a href="/aboutus">Acerca de</a></li>
+              <li><a href="#aboutus">Acerca de</a></li>
             </ul>
           </div>
           <div class="w-full">
             <ul>
-              <li><a href="/form">Contacto</a></li>
+              <li><a href="#/form">Contacto</a></li>
             </ul>
           </div>
         </div>
@@ -49,9 +49,9 @@
       <!-- Enlaces adicionales -->
       <div class="text-center mb-4">
         <ul class="flex flex-wrap justify-center space-x-4">
-          <li><a href="/tyc">Términos y condiciones</a></li>
-          <li><a href="/tyc">Políticas de privacidad</a></li>
-          <li><a href="/attributions">Atribuciones</a></li>
+          <li><a href="#/tyc">Términos y condiciones</a></li>
+          <li><a href="#/tyc">Políticas de privacidad</a></li>
+          <li><a href="#/attributions">Atribuciones</a></li>
         </ul>
       </div>
 
@@ -70,12 +70,12 @@ export default {
     return {
       isDropdownOpen: false,
       products: [
-        { name: 'Planificación financiera', href: '/servicesone' },
-        { name: 'Gestión Inmobiliaria', href: '/servicestwo' },
-        { name: 'Administración del Family Office', href: '/servicesthree' },
-        { name: 'Gestión de Inversiones', href: '/servicesfour' },
-        { name: 'Planificación para la Gobernanza', href: '/servicesfive' },
-        { name: 'Gestión de Asuntos Legales y Corporativos', href: '/servicessix' }
+        { name: 'Planificación financiera', href: '#/servicesone' },
+        { name: 'Gestión Inmobiliaria', href: '#/servicestwo' },
+        { name: 'Administración del Family Office', href: '#/servicesthree' },
+        { name: 'Gestión de Inversiones', href: '#/servicesfour' },
+        { name: 'Planificación para la Gobernanza', href: '#/servicesfive' },
+        { name: 'Gestión de Asuntos Legales y Corporativos', href: '#/servicessix' }
       ]
     };
   },
