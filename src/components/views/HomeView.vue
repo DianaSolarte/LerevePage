@@ -123,4 +123,19 @@ const implementacionVisible = ref(false);
   background-color: #232323;
   border-radius: 24px; /* Agregamos el radio de borde */
 }
+/* Estilos para tabletas */
+@media screen and (max-width: 1024px) {
+    .homediv {
+        margin: 10px auto; /* Reducir el margen */
+        max-width: 800px; /* Reducir el ancho máximo */
+    }
+}
+/* Estilos para tabletas con anchura de pantalla de 768px */
+@media screen and (max-width: 768px) {
+    .homediv {
+        margin: 10px auto; /* Reducir el margen */
+        max-width: 600px; /* Reducir el ancho máximo */
+    }
+}
+
 </style>
