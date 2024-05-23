@@ -1,0 +1,21 @@
+# Archivo netlify.toml básico
+
+# Configuración global
+[build]
+  command = "npm run build"  # Comando de compilación, ajusta según tus necesidades
+  publish = "dist/"          # Directorio de salida después de la compilación
+
+# Redirecciones
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
+
+# Opciones de funciones (si estás utilizando funciones de Netlify)
+# [functions]
+#   directory = "netlify/functions"
+
+# Opciones de configuración adicionales (si es necesario)
+# [context.production]
+#   command = "npm run build:prod"
+#   environment = { NODE_ENV = "production" }
