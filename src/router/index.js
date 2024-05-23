@@ -11,6 +11,10 @@ import ServicesSix from '../components/views/ServicesViewSix.vue';
 import ServicesViewOne from '../components/views/ServicesViewOne.vue'; // Importar la nueva vista
 import AboutUs from '../components/views/AboutUs.vue'; // Importar la nueva vista
 import WhatsApp from '../components/layouts/Whatsapp.vue'; 
+import ServicesViewTwo from '../components/views/ServicesViewTwo.vue'; // Importar la nueva viTwo
+import ServicesViewThree from '../components/views/ServicesViewThree.vue';
+import ServicesViewFour from '../components/views/ServicesViewFour.vue';
+import ServicesViewFive from '../components/views/ServicesViewFive.vue';
 
 import '../style.css';
 
@@ -73,6 +77,46 @@ const router = createRouter({
       name: 'ServicesViewOne',
       components: {
         default: ServicesViewOne,
+        Navbar: Navbar,
+        Footer: Footer,
+        WhatsApp: WhatsApp,
+      },
+    },
+    {
+      path: '/servicestwo',
+      name: 'ServicesViewTwo',
+      components: {
+        default: ServicesViewTwo,
+        Navbar: Navbar,
+        Footer: Footer,
+        WhatsApp: WhatsApp,
+      },
+    },
+    {
+      path: '/servicesthree',
+      name: 'ServicesViewThree',
+      components: {
+        default: ServicesViewThree,
+        Navbar: Navbar,
+        Footer: Footer,
+        WhatsApp: WhatsApp,
+      },
+    },
+    {
+      path: '/servicesfour',
+      name: 'ServicesViewFour',
+      components: {
+        default: ServicesViewFour,
+        Navbar: Navbar,
+        Footer: Footer,
+        WhatsApp: WhatsApp,
+      },
+    },
+    {
+      path: '/servicesfive',
+      name: 'ServicesViewFive',
+      components: {
+        default: ServicesViewFive,
         Navbar: Navbar,
         Footer: Footer,
         WhatsApp: WhatsApp,

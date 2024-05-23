@@ -1,107 +1,127 @@
 <template>
-
-
-<div id="indicators-carousel" class="relative w-full" data-carousel="static">
-    <!-- Carousel wrapper -->
-    <div class="relative h-56 overflow-hidden rounded-lg md:h-96">
-         <!-- Item 1 -->
-        <div class="hidden duration-700 ease-in-out" data-carousel-item="active">
-            <img src="../../../assets/AboutUs/Rectangle 17.png" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+  <div class="carousel-container">
+    <div class="carousel-wrapper" :style="{ transform: `translateX(-${currentSlide * 50}%)` }">
+      <div class="carousel-item">
+        <div class="carousel-content" style="background-color: #F6F6F6;">
+          <img src="../../../assets/AboutUs/Rectangle 19.png" alt="Imagen 1" class="carousel-image" style="width: 50%; float: left;">
+          <div style="float: left; margin-left: 10px;">
+            <p class="carousel-text">Economista con énfasis en finanzas de la Universidad de los Andes. Especialista y Magister en finanzas corporativas del CESA. Doctor en Finanzas por la Swiss Management Center University. Candidato a Doctor en administración financiera de la Universidad Central de Nicaragua.
+              Dieciocho años de experiencia en el sector bursátil en mercados de renta fija, renta variable, divisas y derivados; tanto en plazas locales, como internacionales. Desempeño laboral como asesor de inversiones, comisionista de bolsa y jefe de mesa del sector real.
+              Actualmente Director de Recaudación de Fondos y Estructuración en Genesis US Properties, así como también Director de Inversiones de un Family Office y miembro del consejo asesor de Seguridad Superior.
+            </p>
+            <p style="font-weight: bold;"><br/> <br/>John Jiménez</p>
+            <p>Gerente general</p>
+          </div>
         </div>
-        <!-- Item 2 -->
-        <div class="hidden duration-700 ease-in-out" data-carousel-item>
-            <img src="../../../assets/AboutUs/Rectangle 17.png" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+      </div>
+      <div class="carousel-item">
+        <div class="carousel-content" style="background-color: #F6F6F6;">
+          <img src="../../../assets/AboutUs/Rectangle 19 (1).png" alt="Imagen 2" class="carousel-image" style="width: 50%; float: left;">
+          <div style="float: left; margin-left: 10px;">
+            <p class="carousel-text">Administradora de Empresas con diplomado en contaduría y marketing, con más de 10 años de experiencia en la administración de inmuebles a terceros, asesoría en creación de empresas , asesorías contables y legales.  </p>
+            <p style="font-weight: bold;"><br/> <br/>Lina Burbano</p>
+            <p>Gerente jurídico y contable</p>
+          </div>
         </div>
-        <!-- Item 3 -->
-        <div class="hidden duration-700 ease-in-out" data-carousel-item>
-            <img src="../../../assets/AboutUs/Rectangle 17.png" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+      </div>
+      
+      <div class="carousel-item">
+        <div class="carousel-content" style="background-color: #F6F6F6;">
+          <img src="../../../assets/AboutUs/Rectangle 19 (2).png" alt="Imagen 3" class="carousel-image" style="width: 50%; float: left;">
+          <div style="float: left; margin-left: 10px;">
+            <p class="carousel-text">Economista con énfasis en finanzas de la Universidad de los Andes. Especialista y Magister en finanzas corporativas del CESA. Doctor en Finanzas por la Swiss Management Center University. Candidato a Doctor en administración financiera de la Universidad Central de Nicaragua.
+              Dieciocho años de experiencia en el sector bursátil en mercados de renta fija, renta variable, divisas y derivados; tanto en plazas locales, como internacionales. Desempeño laboral como asesor de inversiones, comisionista de bolsa y jefe de mesa del sector real.
+              Actualmente Director de Recaudación de Fondos y Estructuración en Genesis US Properties, así como también Director de Inversiones de un Family Office y miembro del consejo asesor de Seguridad Superior.
+            </p>
+            <p style="font-weight: bold;"><br/> <br/>Juan Jiménez</p>
+            <p>Gerente administrativa</p>
+          </div>
         </div>
-        <!-- Item 4 -->
-        <div class="hidden duration-700 ease-in-out" data-carousel-item>
-            <img src="../../../assets/AboutUs/Rectangle 17.png" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
-        </div>
-        <!-- Item 5 -->
-        <div class="hidden duration-700 ease-in-out" data-carousel-item>
-            <img src="../../../assets/AboutUs/Rectangle 17.png" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
-        </div>
+      </div>
     </div>
-    <!-- Slider indicators -->
-    <div class="absolute z-30 flex -translate-x-1/2 space-x-3 rtl:space-x-reverse bottom-5 left-1/2">
-        <button type="button" class="w-3 h-3 rounded-full" aria-current="true" aria-label="Slide 1" data-carousel-slide-to="0"></button>
-        <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 2" data-carousel-slide-to="1"></button>
-        <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 3" data-carousel-slide-to="2"></button>
-        <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 4" data-carousel-slide-to="3"></button>
-        <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 5" data-carousel-slide-to="4"></button>
-    </div>
-    <!-- Slider controls -->
-    <button type="button" class="absolute top-0 start-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-prev>
-        <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
-            <svg class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
-                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 1 1 5l4 4"/>
-            </svg>
-            <span class="sr-only">Previous</span>
-        </span>
-    </button>
-    <button type="button" class="absolute top-0 end-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-next>
-        <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
-            <svg class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
-                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 9 4-4-4-4"/>
-            </svg>
-            <span class="sr-only">Next</span>
-        </span>
-    </button>
-</div>
-
+    <button class="prev-button" @click="prevSlide">&lt;</button>
+    <button class="next-button" @click="nextSlide">&gt;</button>
+  </div>
 </template>
 
 <script>
-import { Carousel, Slide } from 'vue-carousel';
-
 export default {
-  name: 'CarouselComponent',
-  components: {
-    Carousel,
-    Slide
-  }
-}
+  data() {
+    return {
+      currentSlide: 0,
+    };
+  },
+  methods: {
+    prevSlide() {
+      if (this.currentSlide > 0) {
+        this.currentSlide--;
+      } else {
+        this.currentSlide = 2; // Volver al último slide si estamos en el primero
+      }
+    },
+    nextSlide() {
+      if (this.currentSlide < 2) { // Permitir avanzar si no estamos en el último slide
+        this.currentSlide++;
+      } else {
+        this.currentSlide = 0; // Volver al primer slide si estamos en el último
+      }
+    },
+  },
+};
 </script>
 
 <style scoped>
-.profile {
+.carousel-container {
+  position: relative;
+  overflow: hidden;
+}
+
+.carousel-wrapper {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
+  transition: transform 0.5s ease; /* Agregamos transición para un desplazamiento suave */
+}
+
+.carousel-item {
+  flex: 0 0 50%; /* Cada item ocupa la mitad del contenedor */
+  padding: 0 10px;
+  margin-left:68px;
+}
+
+.carousel-content {
+  background-color: #F6F6F6;
   padding: 20px;
+  border-radius: 24px;
+  overflow: hidden; 
+  border: 2px solid #E8E8E8; 
+  height: 100%; 
 }
 
-.profile-image {
-  width: 150px;
-  height: 150px;
-  border-radius: 50%;
-  margin-bottom: 20px;
+.carousel-image {
+  margin-bottom: 10px;
+  max-width: 100%;
 }
 
-.description {
-  font-size: 16px;
+.carousel-text {
   color: #333;
 }
 
-.footer {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-top: 20px;
+.prev-button,
+.next-button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: transparent;
+  border: none;
+  color: #333;
+  font-size: 24px;
+  cursor: pointer;
 }
 
-.footer p {
-  margin: 0;
-  font-weight: bold;
+.prev-button {
+  left: 10px;
 }
 
-.linkedin-icon {
-  width: 20px;
-  height: 20px;
-  margin-top: 10px;
+.next-button {
+  right: 10px;
 }
 </style>

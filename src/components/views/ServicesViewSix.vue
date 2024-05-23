@@ -1,5 +1,5 @@
 <template>
-  <div class="relative min-h-screen">
+  <div class="servicessix relative min-h-screen">
     <Navbar class="navbar" />
     <div class="content-container">
       <div class=" mx-auto py-12 px-6">
@@ -14,9 +14,10 @@
   
     <FrequentQuestionsSix/>
       <Ready/> <!-- Listo para alcanzar las metas -->
-    <Footer class="footer" />
-    <Whatsapp />
+
   </div>
+      <Footer class="footer" />
+    <Whatsapp />
 </template>
 
 <script>
@@ -44,5 +45,9 @@ export default {
 </script>
 
 <style scoped>
-/* Puedes agregar estilos específicos aquí */
+.servicessix {
+    margin: 20px auto; 
+    max-width: 1400px; 
+    
+}
 </style>

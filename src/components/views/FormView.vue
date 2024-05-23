@@ -1,45 +1,52 @@
 <template>
-  <div class="relative min-h-screen">
+  <div class="formdiv relative min-h-screen">
     <Navbar /> <!-- Ubicacion NAVBAR -->
-    <div class="max-w-xl mx-auto py-12">
-      <h2 class="text-2xl font-semibold mb-4">¿Listo para maximizar tu patrimonio?</h2>
+    <div class="w-full px-4 py-12">
+      <p class="">Contáctenos hoy para comenzar</p>
+      <h1 class="text-6xl font-semibold mb-4">¿Listo para maximizar tu patrimonio?</h1>
       <p class="mb-8">Nuestro equipo de expertos está listo para ayudarle a alcanzar sus objetivos financieros y patrimoniales. ¡No dude en ponerse en contacto con nosotros para una consulta gratuita!</p>
       
-      <form @submit.prevent="submitForm" class="space-y-4">
-        <div>
+      <form @submit.prevent="submitForm" class="space-y-8">
+        <div class="relative">
           <label for="nombre" class="block text-sm font-medium text-gray-700">Nombre</label>
-          <input type="text" id="nombre" v-model="formData.nombre" class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md">
+          <input type="text" id="nombre" v-model="formData.nombre" class="mt-1 focus:ring-blue-500 focus:border-blue-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md bg-custom-input">
+          <div class="absolute bottom-0 left-0 right-0 h-0.5 bg-blue-500"></div>
         </div>
 
-        <div>
+        <div class="relative">
           <label for="apellido" class="block text-sm font-medium text-gray-700">Apellido</label>
-          <input type="text" id="apellido" v-model="formData.apellido" class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md">
+          <input type="text" id="apellido" v-model="formData.apellido" class="mt-1 focus:ring-blue-500 focus:border-blue-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md bg-custom-input">
+          <div class="absolute bottom-0 left-0 right-0 h-0.5 bg-blue-500"></div>
         </div>
 
-        <div>
+        <div class="relative">
           <label for="email" class="block text-sm font-medium text-gray-700">Mail Empresarial</label>
-          <input type="email" id="email" v-model="formData.email" class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md">
+          <input type="email" id="email" v-model="formData.email" class="mt-1 focus:ring-blue-500 focus:border-blue-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md bg-custom-input">
+          <div class="absolute bottom-0 left-0 right-0 h-0.5 bg-blue-500"></div>
         </div>
 
-        <div>
+        <div class="relative">
           <label for="mensaje" class="block text-sm font-medium text-gray-700">Mensaje</label>
-          <textarea id="mensaje" v-model="formData.mensaje" rows="4" class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md"></textarea>
+          <textarea id="mensaje" v-model="formData.mensaje" rows="4" class="mt-1 focus:ring-blue-500 focus:border-blue-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md bg-custom-input"></textarea>
+          <div class="absolute bottom-0 left-0 right-0 h-0.5 bg-blue-500"></div>
         </div>
-
-        <div>
-          <button type="submit" class="inline-flex items-center px-4 py-2 border border-transparent text-base font-medium rounded-md text-white bg-blue-500 hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500">
+        <br>
+        <div class="flex justify-center">
+          <button type="submit" class="inline-flex items-center justify-center w-56 h-14 border border-transparent text-lg font-medium rounded-full text-white bg-blue-500 hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500">
             Enviar
           </button>
         </div>
+        <br>
       </form>
 
-      <p class="mt-8 text-center">Llámanos: +57 (601) 612-8418 <br> Escríbenos: servicioalcliente@lereve.com.co <br> Encuéntranos: Bogotá, Cr 7 Bis 124-26 Colombia.</p>
+      <p class="mt-8 text-left"><br><br>Llámanos: +57 (601) 612-8418 <br><br> Escríbenos: servicioalcliente@lereve.com.co <br><br> Encuéntranos: Bogotá, Cr 7 Bis 124-26 Colombia.</p>
+      <p class="mt-8 text-left  text-gray-900" ><br><br>Todos los campos son obligatorios. Al enviar el formulario, aceptas los Términos y Condiciones y la Política de Privacidad.</p>
     </div>
-    <Footer /> <!-- Ubicacion FOOter -->
-    <Whatsapp /> <!-- Boton de WA -->
-  </div>
-</template>
 
+  </div>
+    <Footer /> <!-- Ubicacion FOOter -->
+  <Whatsapp /> <!-- Boton de WA -->
+</template>
 <script>
 import Navbar from '../layouts/Navbar.vue';
 import Footer from '../layouts/Footer.vue';
@@ -73,31 +80,93 @@ export default {
 
 <style scoped>
 /* Asegúrate de que el contenedor principal tenga al menos la altura de la pantalla */
+.form{
+    margin: 20px auto; 
+   max-width: 1100px; 
+}
 .min-h-screen {
   min-height: 100vh;
 }
 
-/* Estilo adicional para el botón de WhatsApp */
-.fixed {
-  position: fixed;
-  bottom: 1.25rem; /* 5 */
-  right: 1.25rem; /* 5 */
+.relative .absolute {
+  position: absolute;
+  bottom: -1px;
+  left: 0;
+  right: 0;
 }
 
-.whatsapp-icon {
-  background-color: #25d366; /* WhatsApp green */
-  border-radius: 50%;
-  padding: 1rem; /* 4 */
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  transition: background-color 0.3s;
+.relative .h-0.5 {
+  height: 2px; /* Mantener la línea delgada */
 }
 
-.whatsapp-icon:hover {
-  background-color: #128c7e; /* Darker WhatsApp green */
+.text-blue-500 {
+  color: #1C76FF;
 }
 
-.whatsapp-icon img {
-  height: 2rem; /* 8 */
-  width: 2rem; /* 8 */
+.focus\:ring-blue-500:focus {
+  --tw-ring-color: #1C76FF;
+}
+
+.focus\:border-blue-500:focus {
+  border-color: #1C76FF;
+}
+
+.bg-blue-500 {
+  background-color: #1C76FF;
+}
+
+.hover\:bg-blue-600:hover {
+  background-color: #1C76FF; /* Mantener el mismo azul en hover */
+}
+
+.focus\:ring-blue-500:focus {
+  --tw-ring-color: #1C76FF;
+}
+
+.inline-flex {
+  display: inline-flex;
+  align-items: center;
+}
+
+.w-56 {
+  width: 14rem; /* Aumentar el ancho del botón */
+}
+
+.h-56 {
+  height: 14rem; /* Aumentar la altura del botón */
+}
+
+.rounded-full {
+  border-radius: 9999px;
+}
+
+.focus\:outline-none:focus {
+  outline: 0;
+}
+
+.focus\:ring-2:focus {
+  box-shadow: 0 0 0 2px var(--tw-ring-color);
+}
+
+.focus\:ring-offset-2:focus {
+  --tw-ring-offset-width: 2px;
+}
+
+.focus\:ring-blue-500:focus {
+  --tw-ring-color: #1C76FF;
+}
+
+.text-left {
+  text-align: left;
+}
+
+
+.formdiv {
+    margin: 20px auto; 
+    max-width: 1400px; 
+    
+}
+input, textarea {
+   background-color: #F9FAEF ;
 }
 </style>

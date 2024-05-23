@@ -1,5 +1,6 @@
 <template>
-  <div>
+
+  <div class="aboutus relative min-h-screen">
     <Navbar class="navbar"/>
 
     <!-- Contenedor para el título -->
@@ -7,7 +8,7 @@
       <div class="max-w-2xl"> <!-- Establecer un ancho máximo -->
         <h2 class="text-2xl font-bold text-black mb-3">Nosotros</h2>
         <h1 class="text-5xl font-bold text-black mb-8">
-          <span class="inline-block md:text-left">Construyendo el futuro financiero de su empresa, <span class="text-blue-500">juntos</span></span>
+          <span class="text-50xl inline-block font-bold md:text-left">Construyendo el futuro financiero de su empresa, <span class="text-blue-500">juntos</span></span>
         </h1>
       </div>
     </div>
@@ -16,10 +17,12 @@
     <img src="../../assets/AboutUs/Frame 14228.png" alt="Imagen" class="w-full" />
     <Newspaper/>
     <Carousel/>
+    <pillars/>
     <Ready/> <!-- Listo para alcanzar las metas -->
     <Whatsapp/><!-- Boton de WA -->
-    <Footer />
+    
   </div>
+  <Footer />
 </template>
 
 <script>
@@ -29,6 +32,7 @@ import Whatsapp from '../layouts/Whatsapp.vue';
 import Ready from '../layouts/Ready.vue';
 import Newspaper from '../layouts/layoutAboutUs/Newspaper.vue';
 import Carousel from '../layouts/layoutAboutUs/Carousel.vue';
+import Pillars from '../layouts/layoutAboutUs/Pillars.vue';
 
 export default {
   name: 'AboutUs',
@@ -37,6 +41,7 @@ export default {
     Ready,
     Newspaper,
     Carousel,
+    Pillars,
     Footer,
     Whatsapp,
   },
@@ -44,5 +49,12 @@ export default {
 </script>
 
 <style scoped>
-/* Aquí puedes agregar estilos adicionales específicos de esta página si lo necesitas */
+.aboutus {
+    margin: 20px auto; 
+    max-width: 1400px; 
+    
+}
+.w-full{
+  width: 100% important!; 
+}
 </style>

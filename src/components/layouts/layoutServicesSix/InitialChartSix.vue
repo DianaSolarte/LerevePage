@@ -1,5 +1,5 @@
 <template>
-  <div class="bg-black p-8 rounded-lg text-white">
+  <div class="asesor p-8 rounded-lg text-white">
     <div class="flex flex-col items-center mb-8">
       <!-- Icono azul con blanco -->
       <div class="bg-blue-500 p-4 rounded-full">
@@ -56,8 +56,8 @@ export default {
 </script>
 
 <style scoped>
-.bg-black {
-  background-color: #000;
+.asesor{
+  background-color: #232323;
 }
 
 .bg-blue-500 {
@@ -74,6 +74,6 @@ export default {
   bottom: 0;
   right: 0;
   width: 2px;
-  background-color: #1C76FF; /* Color de la línea azul */
+  
 }
 </style>

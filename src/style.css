@@ -3,7 +3,19 @@
 @tailwind components;
 @tailwind utilities;
 
-.content-container {
-  margin-left: 1px;
-  margin-right: 1px;
+/* styles.css */
+
+body {
+  margin: 0; /* Elimina el margen predeterminado del cuerpo */
+  padding: 0; /* Elimina el relleno predeterminado del cuerpo */
+
+}
+
+.container {
+  margin: 20px auto; 
+  max-width: 1400px; 
+}
+
+#app {
+  background-color: #F9FAEF;
 }

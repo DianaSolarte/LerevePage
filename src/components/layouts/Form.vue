@@ -4,31 +4,30 @@
     <p class="mb-8">Nuestro equipo de expertos está listo para ayudarle a alcanzar sus objetivos financieros y patrimoniales. ¡No dude en ponerse en contacto con nosotros para una consulta gratuita!</p>
     
     <form @submit.prevent="submitForm" class="space-y-4">
-      <div>
+      <div class="mb-4">
         <label for="nombre" class="block text-sm font-medium text-gray-700">Nombre</label>
-        <input type="text" id="nombre" v-model="formData.nombre" class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md">
+        <input type="text" id="nombre" v-model="formData.nombre" class="custom-input mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md">
       </div>
 
-      <div>
+      <div class="mb-4">
         <label for="apellido" class="block text-sm font-medium text-gray-700">Apellido</label>
-        <input type="text" id="apellido" v-model="formData.apellido" class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md">
+        <input type="text" id="apellido" v-model="formData.apellido" class="custom-input mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md">
       </div>
 
-      <div>
+      <div class="mb-4">
         <label for="email" class="block text-sm font-medium text-gray-700">Mail Empresarial</label>
-        <input type="email" id="email" v-model="formData.email" class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md">
+        <input type="email" id="email" v-model="formData.email" class="custom-input mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md">
       </div>
 
-      <div>
+      <div class="mb-4">
         <label for="mensaje" class="block text-sm font-medium text-gray-700">Mensaje</label>
-        <textarea id="mensaje" v-model="formData.mensaje" rows="4" class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md"></textarea>
+        <textarea id="mensaje" v-model="formData.mensaje" rows="4" class="custom-input mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md"></textarea>
       </div>
 
       <div>
-        <button type="submit" 
-        class="inline-flex items-center px-4 py-2 rounded-full text-base font-medium text-white bg-blue-500 hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500">
-  Enviar
-</button>
+        <button type="submit" class="inline-flex items-center px-4 py-2 rounded-full text-base font-medium text-white bg-blue-500 hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500">
+          Enviar
+        </button>
       </div>
     </form>
 
@@ -51,9 +50,15 @@ export default {
   },
   methods: {
     submitForm() {
-      // Aquí puedes enviar los datos del formulario a través de una petición HTTP o hacer cualquier otra acción que necesites
       console.log('Formulario enviado:', this.formData);
     }
   }
 }
 </script>
+
+<style scoped>
+.custom-input {
+  background-color: #000 !important;
+}
+
+</style>

@@ -3,7 +3,7 @@
     <nav class="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8" aria-label="Global">
       <!-- Sección izquierda: Logo -->
       <div class="flex lg:flex-1">
-        <a href="#" class="-m-1.5 p-1.5">
+        <a href="http://localhost:5173/" class="-m-1.5 p-1.5">
           <span class="sr-only">Le Reve</span>
           <img class="h-8 w-auto" src="/src/assets/LeReve.svg" alt="Le Reve Logo" />
         </a>
@@ -28,7 +28,7 @@
             <PopoverPanel class="absolute -left-8 top-full z-10 mt-3 w-screen max-w-md overflow-hidden rounded-3xl bg-white shadow-lg ring-1 ring-gray-900/5">
               <div class="p-4">
                 <div
-                  v-for="item in products"
+                  v-for="item in services"
                   :key="item.name"
                   class="group relative flex items-center gap-x-6 rounded-lg p-4 text-sm leading-6 hover:bg-gray-50"
                 >
@@ -46,9 +46,9 @@
         </Popover>
 
         <!-- Enlace de Acerca de -->
-        <a href="#" class="text-sm font-semibold leading-6 text-white-900">Acerca de</a>
-        <!-- Enlace de Contacto -->
-        <a href="#" class="text-sm font-semibold leading-6 text-white-900">Contacto</a>
+        <a href="http://localhost:5173/aboutus"  class="text-sm font-semibold leading-6 text-white-900">Acerca de</a>
+      <!-- Enlace de Contacto  -->
+        <a href="http://localhost:5173/form"  class="text-sm font-semibold leading-6 text-white-900">Contacto</a>
       </div>
 
       <!-- Sección derecha: Botón de Contactenos -->
@@ -56,7 +56,7 @@
         <a
           href="http://localhost:5173/form"
           target="_blank"
-          class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded flex items-center"
+          class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full rounded flex items-center"
         >
           <span aria-hidden="true">&rarr;</span> Contactenos
         </a>
@@ -80,7 +80,7 @@
       <div class="fixed inset-0 z-10" />
       <DialogPanel class="fixed inset-y-0 right-0 z-10 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
         <div class="flex items-center justify-between">
-          <a href="#" class="-m-1.5 p-1.5">
+          <a href="http://localhost:5173/" class="-m-1.5 p-1.5">
             <span class="sr-only">Le Reve</span>
             <img class="h-8 w-auto" src="/src/assets/LeReve.svg" alt="Le Reve Logo" />
           </a>
@@ -101,21 +101,22 @@
                 </DisclosureButton>
                 <DisclosurePanel class="mt-2 space-y-2">
                   <DisclosureButton
-                    v-for="item in products"
+                    v-for="item in services"
                     :key="item.name"
                     as="a"
                     :href="item.href"
                     class="block rounded-lg py-2 pl-6 pr-3 text-sm font-semibold leading-7 text-gray-900 hover:bg-gray-50"
+                   
                   >
                     {{ item.name }}
                   </DisclosureButton>
                 </DisclosurePanel>
               </Disclosure>
-              <a href="#" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Acerca de</a>
+              <a href="http://localhost:5173/aboutus" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Acerca de</a>
               <a href="#" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Contacto</a>
             </div>
             <div class="py-6">
-              <a href="http://localhost:5173/form" target="_blank" class="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Contactenos</a>
+              <a href="http://localhost:5173/form"  class="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Contactenos</a>
             </div>
           </div>
         </div>
@@ -134,27 +135,21 @@ import {
   DisclosurePanel,
   Popover,
   PopoverButton,
-  PopoverGroup,
   PopoverPanel
 } from '@headlessui/vue'
 import {
-  ArrowPathIcon,
   Bars3Icon,
-  ChartPieIcon,
-  CursorArrowRaysIcon,
-  FingerPrintIcon,
-  SquaresPlusIcon,
   XMarkIcon
 } from '@heroicons/vue/24/outline'
 import { ChevronDownIcon } from '@heroicons/vue/20/solid'
 
-const products = [
-  { name: 'Planificación financiera', description: 'Planificación financiera', href: '#' },
-  { name: 'Sistemas de gestión', description: 'Sistemas de gestión', href: '#' },
-  { name: 'Sistemas de inversión', description: 'Sistemas de inversión', href: '#' },
-  { name: 'Servicios inmobiliarios', description: 'Servicios inmobiliarios', href: '#' },
-  { name: 'Gestión de riesgos', description: 'Gestión de riesgos', href: '#' },
-  { name: 'Auditoria financiera y de procesos', description: 'Auditoria financiera y de procesos', href: '#' }
+const services = [
+  { name: 'S1 - Planificación financiera', description: 'Planificación financiera', href: 'http://localhost:5173/servicesone' },
+  { name: 'S2 - Gestión Inmobiliaria', description: 'Gestión Inmobiliaria', href: 'http://localhost:5173/servicestwo' },
+  { name: 'S3 - Administración del Family Office', description: 'Administración del Family Office', href: 'http://localhost:5173/servicesthree' },
+  { name: 'S4 - Gestión de Inversiones', description: 'Gestión de Inversiones', href: 'http://localhost:5173/servicesfour' },
+  { name: 'S5 - Planificación para la Gobernanza', description: 'Planificación para la Gobernanza', href: 'http://localhost:5173/servicesfive' },
+  { name: 'S6 - Gestión de Asuntos Legales y Corporativos', description: 'Gestión de Asuntos Legales y Corporativos', href: 'http://localhost:5173/servicessix' }
 ]
 
 const mobileMenuOpen = ref(false)
@@ -166,5 +161,6 @@ const mobileMenuOpen = ref(false)
   color: #ffff;
   margin-left: 1cm;
   margin-right: 1cm;
+  marging-top: 100cm;
 }
 </style>

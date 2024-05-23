@@ -1,19 +1,18 @@
 <template>
-<div>
-<navbar/>
-  <div class="container mx-auto px-4">
-    <div class="py-8">
+  <div class="servicesOne relative min-h-screen">
+    <Navbar/>
+    <div class="container mx-auto px-4 py-8">
       <h1 class="text-6xl font-bold mb-4">Análisis Integral de la Situación Financiera</h1>
       <p class="text-black-800">Realizamos un análisis exhaustivo de la situación financiera de la familia, teniendo en cuenta sus activos, pasivos, flujos de efectivo y objetivos financieros a corto y largo plazo.</p>
+      <InitialChartOne/>
     </div>
-    <InitialChartOne/>
-  </div>
     <AdvantagesOne/> 
     <FrequentQuestionsOne/>
-  <ready/>
-  <Footer/>
-<Whatsapp/>
+    <Ready/>
+    
+    <Whatsapp/>
   </div>
+  <Footer/>
 </template>
 
 <script>
@@ -39,6 +38,10 @@ export default {
 }
 </script>
 
-<style>
-/* Estilos personalizados si es necesario */
+<style scoped>
+.servicesOne {
+    margin: 20px auto; 
+    max-width: 1400px; 
+    
+}
 </style>
