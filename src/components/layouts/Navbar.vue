@@ -3,7 +3,7 @@
     <nav class="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8" aria-label="Global">
       <!-- Sección izquierda: Logo -->
       <div class="flex lg:flex-1">
-        <a href="http://localhost:5173/" class="-m-1.5 p-1.5">
+        <a href="/" class="-m-1.5 p-1.5">
           <span class="sr-only">Le Reve</span>
           <img class="h-8 w-auto" src="/src/assets/LeReve.svg" alt="Le Reve Logo" />
         </a>
@@ -46,15 +46,15 @@
         </Popover>
 
         <!-- Enlace de Acerca de -->
-        <a href="http://localhost:5173/aboutus"  class="text-sm font-semibold leading-6 text-white-900">Acerca de</a>
+        <a href="/aboutus"  class="text-sm font-semibold leading-6 text-white-900">Acerca de</a>
       <!-- Enlace de Contacto  -->
-        <a href="http://localhost:5173/form"  class="text-sm font-semibold leading-6 text-white-900">Contacto</a>
+        <a href="/form"  class="text-sm font-semibold leading-6 text-white-900">Contacto</a>
       </div>
 
       <!-- Sección derecha: Botón de Contactenos -->
       <div class="hidden lg:flex lg:flex-1 lg:justify-end">
         <a
-          href="http://localhost:5173/form"
+          href="/form"
           target="_blank"
           class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full rounded flex items-center"
         >
@@ -80,7 +80,7 @@
       <div class="fixed inset-0 z-10" />
       <DialogPanel class="fixed inset-y-0 right-0 z-10 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
         <div class="flex items-center justify-between">
-          <a href="http://localhost:5173/" class="-m-1.5 p-1.5">
+          <a href="/" class="-m-1.5 p-1.5">
             <span class="sr-only">Le Reve</span>
             <img class="h-8 w-auto" src="/src/assets/LeReve.svg" alt="Le Reve Logo" />
           </a>
@@ -112,11 +112,11 @@
                   </DisclosureButton>
                 </DisclosurePanel>
               </Disclosure>
-              <a href="http://localhost:5173/aboutus" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Acerca de</a>
+              <a href="/aboutus" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Acerca de</a>
               <a href="#" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Contacto</a>
             </div>
             <div class="py-6">
-              <a href="http://localhost:5173/form"  class="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Contactenos</a>
+              <a href="/form"  class="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Contactenos</a>
             </div>
           </div>
         </div>
@@ -144,12 +144,12 @@ import {
 import { ChevronDownIcon } from '@heroicons/vue/20/solid'
 
 const services = [
-  { name: 'S1 - Planificación financiera', description: 'Planificación financiera', href: 'http://localhost:5173/servicesone' },
-  { name: 'S2 - Gestión Inmobiliaria', description: 'Gestión Inmobiliaria', href: 'http://localhost:5173/servicestwo' },
-  { name: 'S3 - Administración del Family Office', description: 'Administración del Family Office', href: 'http://localhost:5173/servicesthree' },
-  { name: 'S4 - Gestión de Inversiones', description: 'Gestión de Inversiones', href: 'http://localhost:5173/servicesfour' },
-  { name: 'S5 - Planificación para la Gobernanza', description: 'Planificación para la Gobernanza', href: 'http://localhost:5173/servicesfive' },
-  { name: 'S6 - Gestión de Asuntos Legales y Corporativos', description: 'Gestión de Asuntos Legales y Corporativos', href: 'http://localhost:5173/servicessix' }
+  { name: 'S1 - Planificación financiera', description: 'Planificación financiera', href: '/servicesone' },
+  { name: 'S2 - Gestión Inmobiliaria', description: 'Gestión Inmobiliaria', href: '/servicestwo' },
+  { name: 'S3 - Administración del Family Office', description: 'Administración del Family Office', href: '/servicesthree' },
+  { name: 'S4 - Gestión de Inversiones', description: 'Gestión de Inversiones', href: '/servicesfour' },
+  { name: 'S5 - Planificación para la Gobernanza', description: 'Planificación para la Gobernanza', href: '/servicesfive' },
+  { name: 'S6 - Gestión de Asuntos Legales y Corporativos', description: 'Gestión de Asuntos Legales y Corporativos', href: '/servicessix' }
 ]
 
 const mobileMenuOpen = ref(false)
