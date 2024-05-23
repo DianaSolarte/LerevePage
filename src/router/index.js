@@ -1,4 +1,4 @@
-import { createRouter, createWebHistory } from 'vue-router';
+import { createRouter, createWebHashHistory } from 'vue-router';
 // Importar componentes
 import HomeView from '../components/views/HomeView.vue';
 import Navbar from '../components/layouts/Navbar.vue';
