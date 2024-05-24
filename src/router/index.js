@@ -39,7 +39,7 @@ const router = createRouter({
       name: 'Form',
       components: {
         default: FormView,
-        Form: Form,
+       // Form: Form,
         Navbar: Navbar,
         Footer: Footer,
         WhatsApp: WhatsApp,
