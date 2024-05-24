@@ -1,14 +1,13 @@
 <template>
-
   <div class="aboutus relative min-h-screen">
     <Navbar class="navbar"/>
 
     <!-- Contenedor para el título -->
     <div class="container mx-auto px-4 mt-8">
-      <div class="max-w-2xl"> <!-- Establecer un ancho máximo -->
-        <h2 class="text-2xl font-bold text-black mb-3">Nosotros</h2>
-        <h1 class="text-5xl font-bold text-black mb-8">
-          <span class="text-50xl inline-block font-bold md:text-left">Construyendo el futuro financiero de su empresa, <span class="text-blue-500">juntos</span></span>
+      <div class="max-w-xl md:max-w-2xl lg:max-w-3xl"> <!-- Establecer un ancho máximo -->
+        <h2 class="text-xl md:text-2xl lg:text-3xl font-bold text-black mb-3">Nosotros</h2>
+        <h1 class="text-3xl md:text-5xl lg:text-6xl font-bold text-black mb-8">
+          <span class="text-4xl md:text-5xl lg:text-6xl inline-block font-bold md:text-left">Construyendo el futuro financiero de su empresa, <span class="text-blue-500">juntos</span></span>
         </h1>
       </div>
     </div>
@@ -17,7 +16,7 @@
     <img src="../../assets/AboutUs/Frame 14228.png" alt="Imagen" class="w-full" />
     <Newspaper/>
     <Carousel/>
-    <pillars/>
+    <Pillars/>
     <Ready/> <!-- Listo para alcanzar las metas -->
     <Whatsapp/><!-- Boton de WA -->
     
@@ -54,7 +53,7 @@ export default {
     max-width: 1400px; 
     
 }
-.w-full{
-  width: 100% important!; 
+.w-full {
+  width: 100% !important; 
 }
 </style>

@@ -2,10 +2,9 @@
   <div class="homediv relative min-h-screen">
     <Navbar /> <!-- UBICACION NAVBAR -->
 
-    <div class="container mx-auto flex ">
-      <!-- cuadro asesoria financiera -->
+    <div class="container mx-auto flex flex-col lg:flex-row">
       <!-- Cuadro izquierdo -->
-      <div class="w-1/2 p-6">
+      <div class="left-content w-full lg:w-1/2 p-6">
         <p class="text-sm text-gray-500">Maximice su patrimonio con nuestro expertise</p>
         <h2 class="text-6xl font-bold mt-6 mb-8">Asesoría Financiera e Inmobiliaria para Family Office</h2>
         <p class="text-gray-700">Somos una firma especializada en proporcionar asesoramiento financiero y empresarial a su Family Office. Nuestra experiencia y compromiso nos permiten ofrecer soluciones integrales para proteger y hacer crecer su patrimonio.</p>
@@ -18,66 +17,18 @@
       </div>
 
       <!-- Cuadro derecho con imagen -->
-      <div class="w-1/2 p-6">
+      <div class="right-content w-full lg:w-1/2 p-6">
         <img src="../../assets/Frame 14344.png" alt="Imagen" class="rounded-lg">
       </div>
     </div>
-
-    <!-- CUADRO DE 3 PASOS "3 pasos hacia un futuro financiero sólido" -->
-    <div class="pasos container mx-auto text-white p-6 rounded-lg animate__backInLeft">
-      <p class="text-sm">¿Cómo funciona?</p>
-      <h2 class="text-2xl font-bold mt-4 mb-6">3 pasos hacia un futuro financiero sólido</h2>
-      <p class="mb-6">Seguimos un proceso estructurado para garantizar que reciba la mejor atención y los mejores resultados.</p>
-      
-      <div class="flex space-x-6">
-        <!-- Primer cuadro -->
-        <div class="flex-1 bg-white text-black p-6 rounded-lg transition-all duration-300" :class="{ 'h-auto': evaluacionVisible, 'h-32': !evaluacionVisible }">
-          <div class="flex justify-between items-center mb-4">
-            <h3 class="text-xl font-bold">
-              <span class="text-blue">01</span> Evaluación
-            </h3>
-            <button @click="evaluacionVisible = !evaluacionVisible" class="text-blue text-2xl focus:outline-none">
-              {{ evaluacionVisible ? '-' : '+' }}
-            </button>
-          </div>
-          <p v-show="evaluacionVisible" class="transition-opacity duration-300">Evaluamos su situación financiera actual para identificar sus fortalezas, debilidades, oportunidades y amenazas.</p>
-        </div>
-        
-        <!-- Segundo cuadro -->
-        <div class="flex-1 bg-white text-black p-6 rounded-lg transition-all duration-300" :class="{ 'h-auto': disenoVisible, 'h-32': !disenoVisible }">
-          <div class="flex justify-between items-center mb-4">
-            <h3 class="text-xl font-bold">
-              <span class="text-blue">02</span> Diseño Estratégico
-            </h3>
-            <button @click="disenoVisible = !disenoVisible" class="text-blue text-2xl focus:outline-none">
-              {{ disenoVisible ? '-' : '+' }}
-            </button>
-          </div>
-          <p v-show="disenoVisible" class="transition-opacity duration-300">Seguimos un proceso estructurado para garantizar que reciba la mejor atención y los mejores resultados.</p>
-        </div>
-        
-        <!-- Tercer cuadro -->
-        <div class="flex-1 bg-white text-black p-6 rounded-lg transition-all duration-300" :class="{ 'h-auto': implementacionVisible, 'h-32': !implementacionVisible }">
-          <div class="flex justify-between items-center mb-4">
-            <h3 class="text-xl font-bold">
-              <span class="text-blue">03</span> Implementación y Seguimiento
-            </h3>
-            <button @click="implementacionVisible = !implementacionVisible" class="text-blue text-2xl focus:outline-none">
-              {{ implementacionVisible ? '-' : '+' }}
-            </button>
-          </div>
-          <p v-show="implementacionVisible" class="transition-opacity duration-300">Implementamos la estrategia diseñada y realizamos un seguimiento continuo para ajustarla según sea necesario.</p>
-        </div>
-      </div>
-    </div>
-
+    <FutureSteps/>
     <!-- CARD De SERVICIOS INTEGRALES -->
     <IntegralServices />
     <Because />
     <Ready /> <!-- Listo para alcanzar las metas -->
   </div>
   <Whatsapp /> <!-- Boton de WA -->
-    <Footer /> <!-- Ubicacion FOOter -->
+  <Footer /> <!-- Ubicacion FOOter -->
 </template>
 
 <script setup>
@@ -88,6 +39,7 @@ import Ready from '../layouts/Ready.vue';
 import Whatsapp from '../layouts/Whatsapp.vue';
 import IntegralServices from '../layouts/layoutHome/IntegralServices.vue';
 import Because from '../layouts/layoutHome/Because.vue';
+import FutureSteps from '../layouts/layoutHome/FutureSteps.vue';
 
 import { ref } from 'vue';
 
@@ -97,8 +49,6 @@ const implementacionVisible = ref(false);
 </script>
 
 <style scoped>
-
-
 .text-blue {
   color: #1C76FF;
 }
@@ -110,32 +60,46 @@ const implementacionVisible = ref(false);
 .transition-opacity {
   transition: opacity 0.3s ease;
 }
-.pasos{
-  background-color:#232323;
-}
 
-.homediv {
-    margin: 20px auto; 
-    max-width: 1400px; 
-    
-}
 .pasos {
   background-color: #232323;
-  border-radius: 24px; /* Agregamos el radio de borde */
-}
-/* Estilos para tabletas */
-@media screen and (max-width: 1024px) {
-    .homediv {
-        margin: 10px auto; /* Reducir el margen */
-        max-width: 800px; /* Reducir el ancho máximo */
-    }
-}
-/* Estilos para tabletas con anchura de pantalla de 768px */
-@media screen and (max-width: 768px) {
-    .homediv {
-        margin: 10px auto; /* Reducir el margen */
-        max-width: 600px; /* Reducir el ancho máximo */
-    }
 }
 
+/* Ajustes de responsive para móviles y tabletas */
+@media screen and (max-width: 1024px) {
+  .homediv {
+    margin: 10px auto;
+    max-width: 800px;
+  }
+
+  .container {
+    flex-direction: column;
+  }
+
+  .left-content {
+    order: 1;
+  }
+
+  .right-content {
+    order: 4;
+    margin-top: 1rem;
+  }
+
+  .left-content p.text-sm {
+    order: 2;
+    font-size: 0.875rem; /* Reducir el tamaño del texto */
+  }
+
+  .left-content h2 {
+    order: 3;
+    font-size: 2rem; /* Reducir el tamaño del título */
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+  }
+
+  .left-content p.text-gray-700 {
+    order: 4;
+    margin-bottom: 1rem;
+  }
+}
 </style>

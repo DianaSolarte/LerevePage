@@ -9,9 +9,9 @@
     </div>
     <div class="space-y-4">
       <div v-for="(faq, index) in faqs" :key="index" class="bg-custom-gray p-4 rounded-lg">
-        <div class="flex justify-between items-center">
+        <div class="flex flex-col sm:flex-row justify-between items-start sm:items-center">
           <h4 class="text-lg font-semibold">{{ faq.question }}</h4>
-          <button @click="toggleAnswer(index)" class="text-blue-500 text-2xl font-bold">
+          <button @click="toggleAnswer(index)" class="text-blue-500 text-2xl font-bold mt-2 sm:mt-0">
             {{ faq.showAnswer ? '-' : '+' }}
           </button>
         </div>
@@ -37,7 +37,7 @@ export default {
           answer: 'Los servicios pueden incluir gestión de inversiones, planificación patrimonial, asesoramiento fiscal, gestión de riesgos, servicios administrativos y educación financiera, entre otros.',
           showAnswer: false,
         },
-          {
+        {
           question: '¿Cómo seleccionar un family office adecuado para mi familia?',
           answer: 'La familia desempeña un papel importante al proporcionar orientación estratégica, comunicarse abiertamente con el family office y participar en la toma de decisiones importantes.',
           showAnswer: false,
@@ -47,8 +47,6 @@ export default {
           answer: 'XXXX',
           showAnswer: false,
         },
-      
-    
       ],
     };
   },

@@ -7,16 +7,15 @@
           <img src="../../assets/LeReve.svg" alt="Logo" class="h-15 w-15 mb-2">
           <span class="text-lg font-semibold">Preservando tu legado, asegurando tu futuro</span>
         </div>
-
         <!-- Parte central -->
         <div class="w-full md:w-1/3 mb-8 md:mb-0 ">
           <h3 class="text-lg font-semibold mb-4">Explorar</h3>
           <div class="w-full mb-4">
-            <h4 class="text-md font- mb-">Nosotros</h4>
-            
+            <ul class="flex flex-wrap justify space-x-4">
+              <li><a href="/aboutus">Nosotros</a></li>
+            </ul>
           </div>
           <div @click="toggleDropdown" class="cursor-pointer">
-        
             <span>Servicios</span>
             <svg :class="{ 'transform rotate-180': isDropdownOpen }" class="inline-block w-4 h-4 ml-2 transition-transform">
               <path fill="currentColor" d="M5.75 8.75L9.5 12.5L13.25 8.75H5.75Z" />
@@ -33,14 +32,13 @@
         <div class="w-full md:w-1/3 ">
           <h3 class="text-lg font-semibold mb-4">Compañía</h3>
           <div class="w-full mb-4">
-           
             <ul>
-              <li><a href="#aboutus">Acerca de</a></li>
+              <li><a href="/aboutus">Acerca de</a></li>
             </ul>
           </div>
           <div class="w-full">
             <ul>
-              <li><a href="#/form">Contacto</a></li>
+              <li><a href="/form">Contacto</a></li>
             </ul>
           </div>
         </div>
@@ -49,9 +47,9 @@
       <!-- Enlaces adicionales -->
       <div class="text-center mb-4">
         <ul class="flex flex-wrap justify-center space-x-4">
-          <li><a href="#/tyc">Términos y condiciones</a></li>
-          <li><a href="#/tyc">Políticas de privacidad</a></li>
-          <li><a href="#/attributions">Atribuciones</a></li>
+          <li><a href="/tyc">Términos y condiciones</a></li>
+          <li><a href="/tyc">Políticas de privacidad</a></li>
+          <li><a href="/attributions">Atribuciones</a></li>
         </ul>
       </div>
 
@@ -70,12 +68,12 @@ export default {
     return {
       isDropdownOpen: false,
       products: [
-        { name: 'Planificación financiera', href: '#/servicesone' },
-        { name: 'Gestión Inmobiliaria', href: '#/servicestwo' },
-        { name: 'Administración del Family Office', href: '#/servicesthree' },
-        { name: 'Gestión de Inversiones', href: '#/servicesfour' },
-        { name: 'Planificación para la Gobernanza', href: '#/servicesfive' },
-        { name: 'Gestión de Asuntos Legales y Corporativos', href: '#/servicessix' }
+        { name: 'Planificación financiera', href: '/servicesone' },
+        { name: 'Gestión Inmobiliaria', href: '/servicestwo' },
+        { name: 'Administración del Family Office', href: '/servicesthree' },
+        { name: 'Gestión de Inversiones', href: '/servicesfour' },
+        { name: 'Planificación para la Gobernanza', href: '/servicesfive' },
+        { name: 'Gestión de Asuntos Legales y Corporativos', href: '/servicessix' }
       ]
     };
   },
@@ -90,5 +88,24 @@ export default {
 <style scoped>
 footer {
   background-color: #232323;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .flex-wrap {
+    flex-wrap: wrap;
+  }
+
+  .mb-8 {
+    margin-bottom: 4rem;
+  }
+
+  .md\:w-1\/3 {
+    width: 100%;
+  }
+
+  .md\:mb-0 {
+    margin-bottom: 0;
+  }
 }
 </style>

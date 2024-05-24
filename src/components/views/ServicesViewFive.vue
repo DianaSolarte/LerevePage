@@ -1,21 +1,20 @@
 <template>
-<div class="servicesfive relative min-h-screen">
-<navbar/>
-  <div class="container mx-auto px-4">
-    <div class="py-8">
-    <p class="text-black-800">XXXXX</p>
-      <h1 class="text-6xl font-bold mb-4">Planificación para la Gobernanza</h1>
-      <p class="text-black-800">Nuestro servicio puede ayudarle a establecer una estructura de gobierno efectiva para su familia. Nos especializamos en brindar asesoría para desarrollar políticas, procedimientos y sistemas que promuevan una gestión eficiente y transparente, para la toma de decisiones</p>
+  <div class="servicesfive relative min-h-screen">
+    <Navbar/>
+    <div class="container mx-auto px-4">
+      <div class="py-8">
+        <p class="text-base sm:text-lg md:text-xl lg:text-2xl text-black-800">XXXXX</p>
+        <h1 class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-4">Planificación para la Gobernanza</h1>
+        <p class="text-base sm:text-lg md:text-xl lg:text-2xl text-black-800">Nuestro servicio puede ayudarle a establecer una estructura de gobierno efectiva para su familia. Nos especializamos en brindar asesoría para desarrollar políticas, procedimientos y sistemas que promuevan una gestión eficiente y transparente, para la toma de decisiones.</p>
+      </div>
+      <InitialChartFive/>
     </div>
-    <InitialChartFive/>
-  </div>
     <AdvantagesFive/> 
     <FrequentQuestionsFive/>
-  <ready/>
-
+    <Ready/>
+    <Whatsapp/>
   </div>
-    <Footer/>
-<Whatsapp/>
+  <Footer/>
 </template>
 
 <script>
@@ -43,8 +42,7 @@ export default {
 
 <style>
 .servicesfive {
-    margin: 20px auto; 
-    max-width: 1400px; 
-    
+  margin: 20px auto; 
+  max-width: 1400px; 
 }
 </style>

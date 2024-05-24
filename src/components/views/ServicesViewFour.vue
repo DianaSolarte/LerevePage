@@ -1,21 +1,20 @@
 <template>
-<div class="servicesfour relative min-h-screen">
-<navbar/>
-  <div class="container mx-auto px-4">
-    <div class="py-8">
-    <p class="text-black-800">XXXXX</p>
-      <h1 class="text-6xl font-bold mb-4">Gestión de Inversiones</h1>
-      <p class="text-black-800">Gestión de Inversiones se enfoca en ayudarle a administrar tus activos financieros de manera eficiente y efectiva. Nuestro equipo de expertos en inversiones está dedicado a proporcionarle asesoramiento personalizado y soluciones adaptadas a sus objetivos financieros y tolerancia al riesgo. Ya sea que estés buscando aumentar su patrimonio, generar ingresos pasivos o diversificar tu cartera, estamos aquí para ayudarle a tomar decisiones informadas y estratégicas</p>
+  <div class="servicesfour relative min-h-screen">
+    <Navbar/>
+    <div class="container mx-auto px-4">
+      <div class="py-8">
+        <p class="text-base sm:text-lg md:text-xl lg:text-2xl text-black-800">XXXXX</p>
+        <h1 class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-4">Gestión de Inversiones</h1>
+        <p class="text-base sm:text-lg md:text-xl lg:text-2xl text-black-800">Gestión de Inversiones se enfoca en ayudarle a administrar tus activos financieros de manera eficiente y efectiva. Nuestro equipo de expertos en inversiones está dedicado a proporcionarle asesoramiento personalizado y soluciones adaptadas a sus objetivos financieros y tolerancia al riesgo. Ya sea que estés buscando aumentar su patrimonio, generar ingresos pasivos o diversificar tu cartera, estamos aquí para ayudarle a tomar decisiones informadas y estratégicas.</p>
+      </div>
+      <InitialChartFour/>
     </div>
-    <InitialChartFour/>
-  </div>
     <AdvantagesFour/> 
     <FrequentQuestionsFour/>
-  <ready/>
-
-<Whatsapp/>
+    <Ready/>
+    <Whatsapp/>
   </div>
-    <Footer/>
+  <Footer/>
 </template>
 
 <script>
@@ -43,8 +42,7 @@ export default {
 
 <style>
 .servicesfour {
-    margin: 20px auto; 
-    max-width: 1400px; 
-    
+  margin: 20px auto; 
+  max-width: 1400px; 
 }
 </style>

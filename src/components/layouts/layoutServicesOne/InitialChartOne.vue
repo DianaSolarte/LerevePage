@@ -5,40 +5,40 @@
       <div class="bg-blue-500 p-4 rounded-full">
         <img src="../../../assets/Frame 14249.png" class="h-10 w-10 text-white" alt="Icono" />
       </div>
-      <h1 class="text-3xl font-bold mt-4">Tome el control de su futuro financiero</h1>
-      <h2 class="text-xl mt-2">Hay muchos beneficios de la planificación financiera, incluyendo:</h2>
+      <h1 class="text-3xl font-bold mt-4 text-center">Tome el control de su futuro financiero</h1>
+      <h2 class="text-xl mt-2 text-center">Hay muchos beneficios de la planificación financiera, incluyendo:</h2>
     </div>
     
-    <div class="flex justify-around">
+    <div class="flex flex-col md:flex-row justify-around">
       <!-- Primer cuadro -->
-      <div class="bg-white text-blue-500 p-6 rounded-lg flex flex-col items-start shadow-lg w-1/3 mx-2">
+      <div class="bg-white text-blue-500 p-6 rounded-lg flex flex-col items-start shadow-lg w-full md:w-1/3 mb-6 md:mb-0 mx-2">
         <div class="relative w-32 h-32 mb-4">
           <img src="../../../assets/Ellipse 4.png" class="w-full h-full rounded-full" alt="Imagen 1" />
-          <div class="absolute top-0 left-0 w-full h-full "></div>
+          <div class="absolute top-0 left-0 w-full h-full"></div>
         </div>
         <h3 class="text-4xl font-bold mb-2" style="color: #1C76FF;"><br/> 01</h3>
         <div class="line-right"></div>
         <h4 class="text-xl font-semibold mb-2">Asesoramiento personalizado</h4>
-        <p class="text-left text-black mb-4"><br/> GNuestros expertos financieros trabajan directamente con usted para comprender sus objetivos financieros y diseñar estrategias adaptadas a sus necesidades específicas..</p>
+        <p class="text-left text-black mb-4"><br/> Nuestros expertos financieros trabajan directamente con usted para comprender sus objetivos financieros y diseñar estrategias adaptadas a sus necesidades específicas.</p>
       </div>
       
       <!-- Segundo cuadro -->
-      <div class="bg-white text-blue-500 p-6 rounded-lg flex flex-col items-start shadow-lg w-1/3 mx-2">
+      <div class="bg-white text-blue-500 p-6 rounded-lg flex flex-col items-start shadow-lg w-full md:w-1/3 mb-6 md:mb-0 mx-2">
         <div class="relative w-32 h-32 mb-4">
           <img src="../../../assets/Ellipse 5.png" class="w-full h-full rounded-full" alt="Imagen 2" />
           <div class="absolute top-0 left-0 w-full h-full rounded-full"></div>
         </div>
         <h3 class="text-4xl font-bold mb-2" style="color: #1C76FF;"><br/> 02</h3>
         <div class="line-right"></div>
-        <h4 class="text-xl font-semibold mb-2">Análisis Profundo </h4>
-        <p class="text-left text-black mb-4"><br/>  PRealizamos un análisis exhaustivo de su situación financiera actual y desarrollamos soluciones a medida para maximizar el rendimiento de su patrimonio.</p>
+        <h4 class="text-xl font-semibold mb-2">Análisis Profundo</h4>
+        <p class="text-left text-black mb-4"><br/> Realizamos un análisis exhaustivo de su situación financiera actual y desarrollamos soluciones a medida para maximizar el rendimiento de su patrimonio.</p>
       </div>
       
       <!-- Tercer cuadro -->
-      <div class="bg-white text-blue-500 p-6 rounded-lg flex flex-col items-start shadow-lg w-1/3 mx-2">
+      <div class="bg-white text-blue-500 p-6 rounded-lg flex flex-col items-start shadow-lg w-full md:w-1/3 mb-6 md:mb-0 mx-2">
         <div class="relative w-32 h-32 mb-4">
           <img src="../../../assets/Ellipse 5 (1).png" class="w-full h-full rounded-full" alt="Imagen 3" />
-          <div class="absolute top-0 left-0 w-full h-full  rounded-full"></div>
+          <div class="absolute top-0 left-0 w-full h-full rounded-full"></div>
         </div>
         <h3 class="text-4xl font-bold mb-2" style="color: #1C76FF;"><br/> 03</h3>
         <div class="line-right"></div>
@@ -74,6 +74,5 @@ export default {
   bottom: 0;
   right: 0;
   width: 2px;
- 
 }
 </style>

@@ -42,7 +42,6 @@ export default {
           answer: 'La asesoría financiera abarca una gama más amplia de servicios, que incluyen planificación financiera integral, gestión de riesgos, planificación tributaria, entre otros. La gestión de inversiones se centra específicamente en la gestión activa de carteras de inversión para maximizar el rendimiento y minimizar el riesgo.',
           showAnswer: false,
         },
-    
       ],
     };
   },

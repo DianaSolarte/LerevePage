@@ -1,21 +1,20 @@
 <template>
-<div class="servicestwo relative min-h-screen">
-<navbar/>
-  <div class="container mx-auto px-4">
-    <div class="py-8">
-    <p class="text-black-800">xxxx</p>
-      <h1 class="text-6xl font-bold mb-4">Gestión Inmobiliaria</h1>
-      <p class="text-black-800">Gestión experta de sus activos inmobiliarios para maximizar su valor y rentabilidad.</p>
+  <div class="servicestwo relative min-h-screen">
+    <Navbar/>
+    <div class="container mx-auto px-4">
+      <div class="py-8">
+        <p class="text-base sm:text-lg md:text-xl lg:text-2xl text-black-800">xxxx</p>
+        <h1 class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-4">Gestión Inmobiliaria</h1>
+        <p class="text-base sm:text-lg md:text-xl lg:text-2xl text-black-800">Gestión experta de sus activos inmobiliarios para maximizar su valor y rentabilidad.</p>
+      </div>
+      <InitialChartTwo/>
     </div>
-    <InitialChartTwo/>
-  </div>
     <AdvantagesTwo/> 
     <FrequentQuestionsTwo/>
-  <ready/>
- 
-<Whatsapp/>
+    <Ready/>
+    <Whatsapp/>
   </div>
-   <Footer/>
+  <Footer/>
 </template>
 
 <script>
@@ -43,8 +42,7 @@ export default {
 
 <style>
 .servicestwo {
-    margin: 20px auto; 
-    max-width: 1400px; 
-    
+  margin: 20px auto; 
+  max-width: 1400px; 
 }
 </style>

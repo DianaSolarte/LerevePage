@@ -4,7 +4,8 @@
     <p class="font-bold text-lg mt-2 mb-4">Transformamos su negocio</p>
     <p class="text-sm">Más de {{ years }} años de experiencia brindando asesoría financiera y empresarial de primer nivel.</p>
     
-    <div class="flex justify-between mt-10 space-x-4">
+    <!-- Contenedor de imágenes con diseño responsive -->
+    <div class="flex flex-col md:flex-row md:justify-between mt-10 space-y-4 md:space-y-0 md:space-x-4">
       <a href="#" class="flex-1">
         <img src="../../../assets/Home/Frame 14213.png" alt="Imagen 1" class="w-full">
       </a>
@@ -72,12 +73,8 @@ const years = 20; // Puedes ajustar el número de años según sea necesario
   display: flex;
 }
 
-.justify-between {
-  justify-content: space-between;
-}
-
-.space-x-4 {
-  gap: 1rem;
+.flex-col {
+  flex-direction: column;
 }
 
 .flex-1 {
@@ -86,5 +83,12 @@ const years = 20; // Puedes ajustar el número de años según sea necesario
 
 .w-full {
   width: 100%;
+}
+
+/* Estilos para dispositivos móviles y tablets */
+@media (min-width: 640px) {
+  .flex-col.md\:flex-row {
+    flex-direction: row;
+  }
 }
 </style>

@@ -1,11 +1,11 @@
 <template>
-<Navbar /> <!-- Ubicación Navbar -->
   <div>
+    <Navbar /> <!-- Ubicación Navbar -->
     
-    <div class="max-w-3xl mx-auto py-12 px-4">
-      <h1 class="text-4xl font-bold mb-6">Atribuciones</h1>
-      <h2 class="text-2xl font-semibold mb-4">Los íconos utilizados en nuestro sitio web son cortesía de FlatIcon.</h2>
-      <ul class="list-none pl-5 space-y-2">
+    <div class="max-w-3xl mx-auto py-8 px-4 md:py-12 md:px-6">
+      <h1 class="text-3xl md:text-4xl font-bold mb-6">Atribuciones</h1>
+      <h2 class="text-xl md:text-2xl font-semibold mb-4">Los íconos utilizados en nuestro sitio web son cortesía de FlatIcon.</h2>
+      <ul class="list-none pl-0 md:pl-5 space-y-2">
         <li>
           <a href="https://www.flaticon.es/iconos-gratis/y2k" title="y2k iconos" class="text-blue-500 hover:underline">
             Y2k iconos creados por GOWI - Flaticon
@@ -13,46 +13,45 @@
         </li>
         <li>
           <a href="https://www.flaticon.es/iconos-gratis/superposicion" title="superposición iconos" class="text-blue-500 hover:underline">
-           alt="superposición iconos" class="inline h-5 w-5 mr-2"> Superposición iconos creados por GOWI - Flaticon
+            <span class="inline h-5 w-5 mr-2">Superposición</span> iconos creados por GOWI - Flaticon
           </a>
         </li>
         <li>
           <a href="https://www.flaticon.es/iconos-gratis/proteger" title="proteger iconos" class="text-blue-500 hover:underline">
-            alt="proteger iconos" class="inline h-5 w-5 mr-2"> Proteger iconos creados por Freepik - Flaticon
+            <span class="inline h-5 w-5 mr-2">Proteger</span> iconos creados por Freepik - Flaticon
           </a>
         </li>
         <li>
           <a href="https://www.flaticon.es/iconos-gratis/verificacion" title="verificación iconos" class="text-blue-500 hover:underline">
-             alt="verificación iconos" class="inline h-5 w-5 mr-2"> Verificación iconos creados por Freepik - Flaticon
+            <span class="inline h-5 w-5 mr-2">Verificación</span> iconos creados por Freepik - Flaticon
           </a>
         </li>
         <li>
           <a href="https://www.flaticon.es/iconos-gratis/plan-de-accion" title="plan de accion iconos" class="text-blue-500 hover:underline">
-            alt="plan de accion iconos" class="inline h-5 w-5 mr-2"> Plan de accion iconos creados por Freepik - Flaticon
+            <span class="inline h-5 w-5 mr-2">Plan de acción</span> iconos creados por Freepik - Flaticon
           </a>
         </li>
         <li>
           <a href="https://www.flaticon.es/iconos-gratis/agregado-inmobiliario" title="agregado inmobiliario iconos" class="text-blue-500 hover:underline">
-            alt="agregado inmobiliario iconos" class="inline h-5 w-5 mr-2"> Agregado inmobiliario iconos creados por gravisio - Flaticon
+            <span class="inline h-5 w-5 mr-2">Agregado inmobiliario</span> iconos creados por gravisio - Flaticon
           </a>
         </li>
         <li>
           <a href="https://www.flaticon.es/iconos-gratis/cuenta-financiera" title="cuenta financiera iconos" class="text-blue-500 hover:underline">
-             alt="cuenta financiera iconos" class="inline h-5 w-5 mr-2"> Cuenta financiera iconos creados por Onesadya.Std - Flaticon
+            <span class="inline h-5 w-5 mr-2">Cuenta financiera</span> iconos creados por Onesadya.Std - Flaticon
           </a>
         </li>
         <li>
           <a href="https://www.flaticon.es/iconos-gratis/ganancias" title="ganancias iconos" class="text-blue-500 hover:underline">
-             alt="ganancias iconos" class="inline h-5 w-5 mr-2"> Ganancias iconos creados por denimao - Flaticon
+            <span class="inline h-5 w-5 mr-2">Ganancias</span> iconos creados por denimao - Flaticon
           </a>
         </li>
       </ul>
     </div>
-     <Whatsapp/><!-- Boton de WA -->
+    
+    <Whatsapp/><!-- Boton de WA -->
     <Footer /> <!-- Ubicación Footer -->
   </div>
-
-
 </template>
 
 <script>
@@ -65,6 +64,7 @@ export default {
   components: {
     Navbar,
     Footer,
+    Whatsapp,
   },
 }
 </script>

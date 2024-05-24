@@ -5,7 +5,7 @@
       <h1 class="text-4xl font-bold mb-4 text-left">Planes personalizados para sus necesidades únicas</h1>
       <h3 class="text-sm text-black-500 text-left">Ofrecemos una amplia gama de soluciones de asesoría financiera integral para ayudarlo a alcanzar sus objetivos. Estas soluciones incluyen:</h3>
     </div>
-    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+    <div class="flex flex-col space-y-8 sm:space-y-0 sm:grid sm:grid-cols-2 lg:grid-cols-3 sm:gap-8">
       <!-- Primera fila de 3 partes -->
       <div class="flex items-start">
         <span class="text-blue-500 text-2xl font-bold mr-4">✓</span>
@@ -40,39 +40,38 @@
         <span class="text-blue-500 text-2xl font-bold mr-4">✓</span>
         <div>
           <h3 class="text-lg font-semibold text-left">Planificación estratégica de negocios.</h3>
-         <!--  <p>Facilitación de la resolución de conflictos legales y corporativos de manera eficiente y efectiva.</p> -->
+          <!--  <p>Facilitación de la resolución de conflictos legales y corporativos de manera eficiente y efectiva.</p> -->
         </div>
       </div>
       <div class="flex items-start">
         <span class="text-blue-500 text-2xl font-bold mr-4">✓</span>
         <div>
           <h3 class="text-lg font-semibold text-left">Planificación jurídica y fiscal entre familia y patrimonio.</h3>
-         <!--  <p>Facilitación de la resolución de conflictos legales y corporativos de manera eficiente y efectiva.</p> -->
+          <!--  <p>Facilitación de la resolución de conflictos legales y corporativos de manera eficiente y efectiva.</p> -->
         </div>
       </div>
       <div class="flex items-start">
         <span class="text-blue-500 text-2xl font-bold mr-4">✓</span>
         <div>
           <h3 class="text-lg font-semibold text-left">Análisis de riesgos fiscales de la empresa familiar</h3>
-         <!--  <p>Facilitación de la resolución de conflictos legales y corporativos de manera eficiente y efectiva.</p> -->
+          <!--  <p>Facilitación de la resolución de conflictos legales y corporativos de manera eficiente y efectiva.</p> -->
         </div>
       </div>
       <div class="flex items-start">
         <span class="text-blue-500 text-2xl font-bold mr-4">✓</span>
         <div>
           <h3 class="text-lg font-semibold text-left">Gestión Patrimonial</h3>
-         <!--  <p>Facilitación de la resolución de conflictos legales y corporativos de manera eficiente y efectiva.</p> -->
+          <!--  <p>Facilitación de la resolución de conflictos legales y corporativos de manera eficiente y efectiva.</p> -->
         </div>
       </div>
       <div class="flex items-start">
         <span class="text-blue-500 text-2xl font-bold mr-4">✓</span>
         <div>
           <h3 class="text-lg font-semibold text-left">Análisis jurídico y fiscal de las inversiones.</h3>
-         <!--  <p>Facilitación de la resolución de conflictos legales y corporativos de manera eficiente y efectiva.</p> -->
+          <!--  <p>Facilitación de la resolución de conflictos legales y corporativos de manera eficiente y efectiva.</p> -->
         </div>
       </div>
     </div>
-  
   </div>
 </template>
 

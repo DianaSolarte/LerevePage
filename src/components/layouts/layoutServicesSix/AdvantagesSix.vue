@@ -5,7 +5,7 @@
       <h1 class="text-4xl font-bold mb-4 text-left">XXX</h1>
       <h3 class="text-sm text-gray-500 text-left">XXX</h3>
     </div>
-    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+    <div class="flex flex-col space-y-8 sm:space-y-0 sm:grid sm:grid-cols-2 lg:grid-cols-3 sm:gap-8">
       <!-- Primera fila de 3 partes -->
       <div class="flex items-start">
         <span class="text-blue-500 text-2xl font-bold mr-4">✓</span>
@@ -44,7 +44,6 @@
         </div>
       </div>
     </div>
-  
   </div>
 </template>
 

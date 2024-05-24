@@ -9,9 +9,9 @@
     </div>
     <div class="space-y-4">
       <div v-for="(faq, index) in faqs" :key="index" class="bg-custom-gray p-4 rounded-lg">
-        <div class="flex justify-between items-center">
+        <div class="flex flex-col sm:flex-row justify-between items-start sm:items-center">
           <h4 class="text-lg font-semibold">{{ faq.question }}</h4>
-          <button @click="toggleAnswer(index)" class="text-blue-500 text-2xl font-bold">
+          <button @click="toggleAnswer(index)" class="text-blue-500 text-2xl font-bold mt-2 sm:mt-0">
             {{ faq.showAnswer ? '-' : '+' }}
           </button>
         </div>
@@ -34,17 +34,14 @@ export default {
         },
         {
           question: '¿Cuáles son los beneficios de trabajar con un servicio de planificación para la gobernanza?',
-          answer: 'Experiencia y conocimientos especializados en la creación y mejora de estructuras de gobernanza.                                                     Asesoramiento personalizado y adaptado a las necesidades específicas de tu organización o familia, Acceso a herramientas y enfoques probados para abordar desafíos de gobernanza, Orientación continua y apoyo durante todo el proceso de implementación',
+          answer: 'Experiencia y conocimientos especializados en la creación y mejora de estructuras de gobernanza. Asesoramiento personalizado y adaptado a las necesidades específicas de tu organización o familia, Acceso a herramientas y enfoques probados para abordar desafíos de gobernanza, Orientación continua y apoyo durante todo el proceso de implementación',
           showAnswer: false,
         },
-          {
-          question: '¿¿Cómo puedo saber si mi organización o familia necesita ayuda en la planificación de la gobernanza??',
+        {
+          question: '¿Cómo puedo saber si mi organización o familia necesita ayuda en la planificación de la gobernanza?',
           answer: 'Algunas señales de que tu organización o familia podría necesitar ayuda en la planificación de la gobernanza incluyen: Confusión o conflicto en los roles y responsabilidades. Decisiones tomadas de manera inconsistente o sin un proceso claro. Falta de transparencia o comunicación efectiva. Riesgos no gestionados o falta de rendición de cuentas. Deseo de mejorar la eficiencia y la efectividad de las operaciones',
           showAnswer: false,
         },
-       
-      
-    
       ],
     };
   },

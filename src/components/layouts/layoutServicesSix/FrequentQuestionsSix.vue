@@ -9,9 +9,9 @@
     </div>
     <div class="space-y-4">
       <div v-for="(faq, index) in faqs" :key="index" class="bg-custom-gray p-4 rounded-lg">
-        <div class="flex justify-between items-center">
+        <div class="flex flex-col sm:flex-row justify-between items-start sm:items-center">
           <h4 class="text-lg font-semibold">{{ faq.question }}</h4>
-          <button @click="toggleAnswer(index)" class="text-blue-500 text-2xl font-bold">
+          <button @click="toggleAnswer(index)" class="text-blue-500 text-2xl font-bold mt-2 sm:mt-0">
             {{ faq.showAnswer ? '-' : '+' }}
           </button>
         </div>
