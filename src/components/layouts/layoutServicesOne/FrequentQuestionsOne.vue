@@ -1,5 +1,5 @@
 <template>
-  <div class="container mx-auto py-12 px-4">
+  <div class="container mx-auto py-1 px-4">
     <div class="text-left mb-8">
       <h2 class="inline-block border border-blue-500 text-black-500 py-2 px-4 rounded-full text-sm">Preguntas Frecuentes</h2>
     </div>
@@ -8,9 +8,9 @@
       <p>Consulta nuestras Preguntas Frecuentes para obtener información rápida sobre cómo trabajamos, qué ofrecemos y cómo podemos ayudar a que tu marca brille.</p>
     </div>
     <div class="space-y-4">
-      <div v-for="(faq, index) in faqs" :key="index" class="bg-custom-gray p-4 rounded-lg">
+      <div v-for="(faq, index) in faqs" :key="index" class="L_texto bg-custom-gray p-4 rounded-lg">
         <div class="flex justify-between items-center">
-          <h4 class="text-lg font-semibold">{{ faq.question }}</h4>
+          <h4 class="L_texto">{{ faq.question }}</h4>
           <button @click="toggleAnswer(index)" class="text-blue-500 text-2xl font-bold">
             {{ faq.showAnswer ? '-' : '+' }}
           </button>
@@ -58,7 +58,9 @@ export default {
   margin-top: 4rem;
 }
 .bg-custom-gray {
-  background-color: #E8E8E8;
+  background-color: #F6F6F6;
+  border-radius: 24px;
+  border: 2px solid #E8E8E8;
 }
 .text-left {
   text-align: left;

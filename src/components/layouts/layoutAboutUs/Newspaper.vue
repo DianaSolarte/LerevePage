@@ -33,7 +33,7 @@
         <div class="w-full md:w-1/2 order-2 md:order-2">
           <div class="mb-4">
             <h4 class="mision text-xl font-bold text-black-500">Nuestra misión</h4>
-            <h2 class="soluciones text-6xl font-bold text-blue-500" style="color: #1C76FF;">Soluciones de alto valor </h2>
+            <h2 class="soluciones text-6xl font-bold text-blue-500" style="color: #1C76FF;">Soluciones</h2>
             <p class="parrafo text-gray-700"> <br/>  <br/>  Brindar soluciones integrales y especializadas en asesoría financiera, inmobiliaria, legal, gobernanza y administrativa, con el objetivo de impulsar el éxito y la seguridad de nuestros clientes. Nos comprometemos a proporcionar servicios de alta calidad, basados en la confianza, la transparencia y la excelencia profesional, ayudando a nuestros clientes a alcanzar sus metas financieras, legales y empresariales de manera efectiva y sostenible.</p>
           </div>
         </div>

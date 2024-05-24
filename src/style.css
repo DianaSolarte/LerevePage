@@ -38,9 +38,9 @@ body {
     @apply font-sans text-20 tracking-tightest;
   }
 
-  .L_titulo {
+/*   .L_titulo {
     @apply font-urbanist-black text-28 tracking-tighter;
-  }
+  } */
 
   .L_texto {
     @apply font-sans text-17 tracking-tighter;
