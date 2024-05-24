@@ -87,6 +87,9 @@ export default {
   flex: 0 0 50%; /* Cada item ocupa el 50% del contenedor */
   height: 800px;
   box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .carousel-content {
@@ -96,6 +99,8 @@ export default {
   border: 2px solid #E8E8E8;
   display: flex;
   flex-direction: column;
+  height: 800px;
+  margin-right: 10px;
   align-items: flex-start; /* Alinear contenido a la izquierda */
 }
 
@@ -148,6 +153,7 @@ export default {
   
   .carousel-item {
     flex: 0 0 100%; /* Cada tarjeta ocupa el 100% del contenedor */
+
   }
 }
 </style>
