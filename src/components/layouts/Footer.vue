@@ -45,17 +45,19 @@
       </div>
 
       <!-- Enlaces adicionales -->
-      <div class="text-center mb-4">
+      <div class="webL_texto text-center mb-4 ">
         <ul class="flex flex-wrap justify-center space-x-4">
-          <li><a href="/tyc">Términos y condiciones</a></li>
-          <li><a href="/tyc">Políticas de privacidad</a></li>
-          <li><a href="/attributions">Atribuciones</a></li>
+          <li><a href="/tyc" class="text-gray-400" >Términos y condiciones</a></li>
+          <li><a href="/tyc" class="text-gray-400">Políticas de privacidad</a></li>
+          <li><a href="/attributions" class="text-gray-400">Atribuciones</a></li>
         </ul>
       </div>
 
       <!-- Pie de página -->
       <div class="text-center">
         <p>Le Reve &copy; 2024 Todos los derechos reservados.</p>
+        <p>Diseño ✨Juan Pablo Ardila.</p>
+        <p>Desarrollo Solarte Store.</p>
       </div>
     </div>
   </footer>
@@ -79,11 +81,13 @@ export default {
   },
   methods: {
     toggleDropdown() {
-      this.isDropdownOpen = !this.isDropdownOpen;
+      
+      this.isDropdownOpen = !this.isDropdownOpen;  
     }
   }
 }
 </script>
+
 
 <style scoped>
 footer {
