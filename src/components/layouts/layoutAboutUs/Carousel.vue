@@ -95,9 +95,9 @@ export default {
 }
 
 .carousel-item {
-  flex: 0 0 50%;
-  /* Cada item ocupa el 50% del contenedor */
-  height: 800px;
+  flex: 0 0 50%; /* Cada item ocupa el 50% del contenedor */
+  height: 1000px;
+  min-height: 1000px;
   box-sizing: border-box;
   display: flex;
   justify-content: center;

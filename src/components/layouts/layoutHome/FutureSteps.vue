@@ -6,10 +6,10 @@
       <h2 class="text-2xl font-bold mt-4 mb-6">3 pasos hacia un futuro financiero sólido</h2>
       <p class="mb-6">Seguimos un proceso estructurado para garantizar que reciba la mejor atención y los mejores resultados.</p>
       
-      <div class="steps-container flex flex-wrap space-x-6">
+      <div class="steps-container flex flex-wrap space-x-4">
         <!-- Primer cuadro -->
-        <div class="step flex-1 bg-white text-black p-6 rounded-lg transition-all duration-300" :class="{ 'h-auto': evaluacionVisible, 'h-32': !evaluacionVisible }">
-          <div class="flex justify-between items-center mb-4">
+        <div class="step flex-1 bg-white text-black p-4 rounded-lg transition-all duration-300" :class="{ 'h-auto': evaluacionVisible, 'h-32': !evaluacionVisible }">
+          <div class="flex justify-between items-center mb-2">
             <h3 class="text-xl font-bold">
               <span class="text-blue">01</span> Evaluación
             </h3>
@@ -21,8 +21,8 @@
         </div>
         
         <!-- Segundo cuadro -->
-        <div class="step flex-1 bg-white text-black p-6 rounded-lg transition-all duration-300" :class="{ 'h-auto': disenoVisible, 'h-32': !disenoVisible }">
-          <div class="flex justify-between items-center mb-4">
+        <div class="step flex-1 bg-white text-black p-4 rounded-lg transition-all duration-300" :class="{ 'h-auto': disenoVisible, 'h-32': !disenoVisible }">
+          <div class="flex justify-between items-center mb-2">
             <h3 class="text-xl font-bold">
               <span class="text-blue">02</span> Diseño Estratégico
             </h3>
@@ -34,8 +34,8 @@
         </div>
         
         <!-- Tercer cuadro -->
-        <div class="step flex-1 bg-white text-black p-6 rounded-lg transition-all duration-300" :class="{ 'h-auto': implementacionVisible, 'h-32': !implementacionVisible }">
-          <div class="flex justify-between items-center mb-4">
+        <div class="step flex-1 bg-white text-black p-4 rounded-lg transition-all duration-300" :class="{ 'h-auto': implementacionVisible, 'h-32': !implementacionVisible }">
+          <div class="flex justify-between items-center mb-2">
             <h3 class="text-xl font-bold">
               <span class="text-blue">03</span> Implementación y Seguimiento
             </h3>
@@ -61,7 +61,7 @@ const implementacionVisible = ref(false);
 <style scoped>
 .future {
   background-color: #232323;
-  border-radius: 24px; /* Agregamos el radio de borde */
+  border-radius: 24px;
 }
 
 .steps-container {
@@ -72,6 +72,11 @@ const implementacionVisible = ref(false);
 .step {
   flex: 1 1 30%;
   margin-bottom: 1rem;
+  padding: 1rem; /* Reduce padding for a thinner appearance */
+}
+
+.text-blue {
+  color: #1C76FF;
 }
 
 @media screen and (max-width: 1024px) {
@@ -83,6 +88,8 @@ const implementacionVisible = ref(false);
   .step {
     flex: 1 1 100%;
     margin-bottom: 1rem;
+    margin-left: 0; /* Ensure no margin on the left */
+    margin-right: 0; /* Ensure no margin on the right */
   }
 }
 </style>

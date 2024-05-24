@@ -81,11 +81,13 @@ export default {
   },
   methods: {
     toggleDropdown() {
-      this.isDropdownOpen = !this.isDropdownOpen;
+      
+      this.isDropdownOpen = !this.isDropdownOpen;  
     }
   }
 }
 </script>
+
 
 <style scoped>
 footer {
