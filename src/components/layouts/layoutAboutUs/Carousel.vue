@@ -5,11 +5,16 @@
         <div class="carousel-content" style="background-color: #F6F6F6;">
           <img src="../../../assets/AboutUs/Rectangle 19.png" alt="Imagen 1" class="carousel-image">
           <div class="carousel-text-container">
-            <p class="carousel-text">Economista con énfasis en finanzas de la Universidad de los Andes. Especialista y Magister en finanzas corporativas del CESA. Doctor en Finanzas por la Swiss Management Center University. Candidato a Doctor en administración financiera de la Universidad Central de Nicaragua.
-              Dieciocho años de experiencia en el sector bursátil en mercados de renta fija, renta variable, divisas y derivados; tanto en plazas locales, como internacionales. Desempeño laboral como asesor de inversiones, comisionista de bolsa y jefe de mesa del sector real.
-              Actualmente Director de Recaudación de Fondos y Estructuración en Genesis US Properties, así como también Director de Inversiones de un Family Office y miembro del consejo asesor de Seguridad Superior.
+            <p class="carousel-text">Economista con énfasis en finanzas de la Universidad de los Andes. Especialista y
+              Magister en finanzas corporativas del CESA. Doctor en Finanzas por la Swiss Management Center University.
+              Candidato a Doctor en administración financiera de la Universidad Central de Nicaragua.
+              Dieciocho años de experiencia en el sector bursátil en mercados de renta fija, renta variable, divisas y
+              derivados; tanto en plazas locales, como internacionales. Desempeño laboral como asesor de inversiones,
+              comisionista de bolsa y jefe de mesa del sector real.
+              Actualmente Director de Recaudación de Fondos y Estructuración en Genesis US Properties, así como también
+              Director de Inversiones de un Family Office y miembro del consejo asesor de Seguridad Superior.
             </p>
-            <p class="carousel-name"><br/><br/>John Jiménez</p>
+            <p class="carousel-name"><br /><br />John Jiménez</p>
             <p>Gerente general</p>
           </div>
         </div>
@@ -18,8 +23,10 @@
         <div class="carousel-content" style="background-color: #F6F6F6;">
           <img src="../../../assets/AboutUs/Rectangle 19 (1).png" alt="Imagen 2" class="carousel-image">
           <div class="carousel-text-container">
-            <p class="carousel-text">Administradora de Empresas con diplomado en contaduría y marketing, con más de 10 años de experiencia en la administración de inmuebles a terceros, asesoría en creación de empresas, asesorías contables y legales.</p>
-            <p class="carousel-name"><br/><br/>Lina Burbano</p>
+            <p class="carousel-text">Administradora de Empresas con diplomado en contaduría y marketing, con más de 10
+              años de experiencia en la administración de inmuebles a terceros, asesoría en creación de empresas,
+              asesorías contables y legales.</p>
+            <p class="carousel-name"><br /><br />Lina Burbano</p>
             <p>Gerente jurídico y contable</p>
           </div>
         </div>
@@ -28,11 +35,16 @@
         <div class="carousel-content" style="background-color: #F6F6F6;">
           <img src="../../../assets/AboutUs/Rectangle 19 (2).png" alt="Imagen 3" class="carousel-image">
           <div class="carousel-text-container">
-            <p class="carousel-text">Economista con énfasis en finanzas de la Universidad de los Andes. Especialista y Magister en finanzas corporativas del CESA. Doctor en Finanzas por la Swiss Management Center University. Candidato a Doctor en administración financiera de la Universidad Central de Nicaragua.
-              Dieciocho años de experiencia en el sector bursátil en mercados de renta fija, renta variable, divisas y derivados; tanto en plazas locales, como internacionales. Desempeño laboral como asesor de inversiones, comisionista de bolsa y jefe de mesa del sector real.
-              Actualmente Director de Recaudación de Fondos y Estructuración en Genesis US Properties, así como también Director de Inversiones de un Family Office y miembro del consejo asesor de Seguridad Superior.
+            <p class="carousel-text">Economista con énfasis en finanzas de la Universidad de los Andes. Especialista y
+              Magister en finanzas corporativas del CESA. Doctor en Finanzas por la Swiss Management Center University.
+              Candidato a Doctor en administración financiera de la Universidad Central de Nicaragua.
+              Dieciocho años de experiencia en el sector bursátil en mercados de renta fija, renta variable, divisas y
+              derivados; tanto en plazas locales, como internacionales. Desempeño laboral como asesor de inversiones,
+              comisionista de bolsa y jefe de mesa del sector real.
+              Actualmente Director de Recaudación de Fondos y Estructuración en Genesis US Properties, así como también
+              Director de Inversiones de un Family Office y miembro del consejo asesor de Seguridad Superior.
             </p>
-            <p class="carousel-name"><br/><br/>Juan Jiménez</p>
+            <p class="carousel-name"><br /><br />Juan Jiménez</p>
             <p>Gerente administrativa</p>
           </div>
         </div>
@@ -79,8 +91,7 @@ export default {
 
 .carousel-wrapper {
   display: flex;
-  transition: transform 
-0.5s ease;
+  transition: transform 0.5s ease;
 }
 
 .carousel-item {
@@ -88,6 +99,9 @@ export default {
   height: 1000px;
   min-height: 1000px;
   box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .carousel-content {
@@ -97,13 +111,19 @@ export default {
   border: 2px solid #E8E8E8;
   display: flex;
   flex-direction: column;
-  align-items: flex-start; /* Alinear contenido a la izquierda */
+  height: 800px;
+  margin-right: 10px;
+  align-items: flex-start;
+  /* Alinear contenido a la izquierda */
 }
 
 .carousel-image {
-  width: 270px; /* Ancho de la imagen */
-  height: 363.89px; /* Altura de la imagen */
-  margin-right: 10px; /* Espacio entre la imagen y el texto */
+  width: 270px;
+  /* Ancho de la imagen */
+  height: 363.89px;
+  /* Altura de la imagen */
+  margin-right: 10px;
+  /* Espacio entre la imagen y el texto */
   border-radius: 12px;
 }
 
@@ -138,19 +158,24 @@ export default {
 .next-button {
   right: 10px;
 }
+
 /* Estilos para dispositivos móviles */
 @media (max-width: 640px) {
   .carousel-wrapper {
-    overflow-x: hidden; /* Ocultar desplazamiento horizontal */
-    scroll-snap-type: none; /* Deshabilitar el desplazamiento de tarjetas */
-    -webkit-overflow-scrolling: touch; /* Desplazamiento suave para dispositivos iOS */
-    flex-wrap: nowrap; /* Alinear las tarjetas en una sola fila */
+    overflow-x: hidden;
+    /* Ocultar desplazamiento horizontal */
+    scroll-snap-type: none;
+    /* Deshabilitar el desplazamiento de tarjetas */
+    -webkit-overflow-scrolling: touch;
+    /* Desplazamiento suave para dispositivos iOS */
+    flex-wrap: nowrap;
+    /* Alinear las tarjetas en una sola fila */
   }
-  
+
   .carousel-item {
-    flex: 0 0 100%; /* Cada tarjeta ocupa el 100% del contenedor */
+    flex: 0 0 100%;
+    /* Cada tarjeta ocupa el 100% del contenedor */
+
   }
 }
 </style>
-
-
