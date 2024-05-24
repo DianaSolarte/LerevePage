@@ -48,7 +48,7 @@
       <div class="hidden lg:flex lg:flex-1 lg:justify-end">
         <a href="/form" target="_blank"
           class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full rounded flex items-center">
-          <span aria-hidden="true">&rarr;</span> Contactenos
+          <span aria-hidden="true">&rarr;</span> <span class="webL_boton">Contactenos</span>
         </a>
       </div>
 
