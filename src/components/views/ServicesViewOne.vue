@@ -2,8 +2,8 @@
   <div class="servicesOne relative min-h-screen">
     <Navbar/>
     <div class="container mx-auto px-4 py-8">
-      <h1 class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-4">Análisis Integral de la Situación Financiera</h1>
-      <p class="text-base sm:text-lg md:text-xl text-black-800">Realizamos un análisis exhaustivo de la situación financiera de la familia, teniendo en cuenta sus activos, pasivos, flujos de efectivo y objetivos financieros a corto y largo plazo.</p>
+      <h1 class="webL_titulo_grande font-bold mb-4">Asesoría Financiera Integral</h1>
+      <p class="text-base sm:text-lg md:text-xl text-black-800 pb-6">Realizamos un análisis exhaustivo de la situación financiera de la familia, teniendo en cuenta sus activos, pasivos, flujos de efectivo y objetivos financieros a corto y largo plazo.</p>
       <InitialChartOne/>
     </div>
     <AdvantagesOne/> 
@@ -41,5 +41,10 @@ export default {
 .servicesOne {
   margin: 20px auto; 
   max-width: 1400px; 
+}
+@media screen and (max-width: 320px) {
+  h1 {
+    font-size: 40px;
+  }
 }
 </style>
