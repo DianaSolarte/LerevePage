@@ -9,11 +9,14 @@
         <h2 class="text-6xl font-bold mt-6 mb-8">Asesoría Financiera e Inmobiliaria para Family Office</h2>
         <p class="text-gray-700">Somos una firma especializada en proporcionar asesoramiento financiero y empresarial a su Family Office. Nuestra experiencia y compromiso nos permiten ofrecer soluciones integrales para proteger y hacer crecer su patrimonio.</p>
         <button class="mt-8 inline-flex items-center px-6 py-3 border border-transparent text-base font-medium rounded-md text-white bg-blue-500 hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500">
-          Contáctenos
-          <svg class="w-4 h-4 ml-2 -mr-1" xmlns="../../assets/Frame 14344.png" viewBox="0 0 20 20" fill="currentColor">
-            <path fill-rule="evenodd" d="M13.293 9l-3.147 3.146a.5.5 0 01-.708-.708l3.5-3.5a.5.5 0 000-.708l-3.5-3.5a.5.5 0 01.708-.708L13.293 7.5a2 2 0 000 2.829z" clip-rule="evenodd" />
-          </svg>
-        </button>
+  <router-link to="/form" class="flex items-center"> <!-- Agregar el enlace aquí -->
+    Contáctenos
+    <svg class="w-4 h-4 ml-2 -mr-1" xmlns="../../assets/Frame 14344.png" viewBox="0 0 20 20" fill="currentColor">
+      <path fill-rule="evenodd" d="M13.293 9l-3.147 3.146a.5.5 0 01-.708-.708l3.5-3.5a.5.5 0 000-.708l-3.5-3.5a.5.5 0 01.708-.708L13.293 7.5a2 2 0 000 2.829z" clip-rule="evenodd" />
+    </svg>
+  </router-link> <!-- Agregar el enlace aquí -->
+</button>
+
       </div>
 
       <!-- Cuadro derecho con imagen -->

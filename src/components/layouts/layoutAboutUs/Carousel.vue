@@ -1,6 +1,6 @@
 <template>
   <div class="carousel-container">
-    <div class="carousel-wrapper" :style="{ transform: `translateX(-${currentSlide * 100}%)` }">
+    <div class="carousel-wrapper" :style="{ transform: `translateX(-${currentSlide * slideWidth}%)` }">
       <div class="carousel-item">
         <div class="carousel-content" style="background-color: #F6F6F6;">
           <img src="../../../assets/AboutUs/Rectangle 19.png" alt="Imagen 1" class="carousel-image">
@@ -48,6 +48,7 @@ export default {
   data() {
     return {
       currentSlide: 0,
+      slideWidth: 50, // Ancho de cada slide en porcentaje
     };
   },
   methods: {
@@ -55,11 +56,11 @@ export default {
       if (this.currentSlide > 0) {
         this.currentSlide--;
       } else {
-        this.currentSlide = 2; // Volver al último slide si estamos en el primero
+        this.currentSlide = 1; // Volver al penúltimo slide si estamos en el primero
       }
     },
     nextSlide() {
-      if (this.currentSlide < 2) { // Permitir avanzar si no estamos en el último slide
+      if (this.currentSlide < 1) { // Permitir avanzar si no estamos en el último slide
         this.currentSlide++;
       } else {
         this.currentSlide = 0; // Volver al primer slide si estamos en el último
@@ -78,11 +79,13 @@ export default {
 
 .carousel-wrapper {
   display: flex;
-  transition: transform 0.5s ease;
+  transition: transform 
+0.5s ease;
 }
 
 .carousel-item {
-  flex: 0 0 100%; /* Cada item ocupa el 100% del contenedor */
+  flex: 0 0 50%; /* Cada item ocupa el 50% del contenedor */
+  height: 800px;
   box-sizing: border-box;
 }
 
@@ -93,12 +96,13 @@ export default {
   border: 2px solid #E8E8E8;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-start; /* Alinear contenido a la izquierda */
 }
 
 .carousel-image {
-  width: 100%;
-  margin-bottom: 10px;
+  width: 270px; /* Ancho de la imagen */
+  height: 363.89px; /* Altura de la imagen */
+  margin-right: 10px; /* Espacio entre la imagen y el texto */
   border-radius: 12px;
 }
 
@@ -133,4 +137,19 @@ export default {
 .next-button {
   right: 10px;
 }
+/* Estilos para dispositivos móviles */
+@media (max-width: 640px) {
+  .carousel-wrapper {
+    overflow-x: hidden; /* Ocultar desplazamiento horizontal */
+    scroll-snap-type: none; /* Deshabilitar el desplazamiento de tarjetas */
+    -webkit-overflow-scrolling: touch; /* Desplazamiento suave para dispositivos iOS */
+    flex-wrap: nowrap; /* Alinear las tarjetas en una sola fila */
+  }
+  
+  .carousel-item {
+    flex: 0 0 100%; /* Cada tarjeta ocupa el 100% del contenedor */
+  }
+}
 </style>
+
+
