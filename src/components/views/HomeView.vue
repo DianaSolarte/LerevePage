@@ -52,6 +52,11 @@ const implementacionVisible = ref(false);
 </script>
 
 <style scoped>
+.homediv {
+  margin: 20px auto; 
+  max-width: 1400px; 
+}
+
 .text-blue {
   color: #1C76FF;
 }
