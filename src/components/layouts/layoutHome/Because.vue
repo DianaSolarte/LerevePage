@@ -98,7 +98,7 @@ const years = 20; // Puedes ajustar el número de años según sea necesario
 }
 
 .image {
-  width: 50%;
+  width: 55%;
   margin-left: auto;
   margin-right: auto;
   height: 300px;
