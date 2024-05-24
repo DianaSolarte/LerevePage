@@ -5,7 +5,10 @@
     <div class="container mx-auto flex flex-col lg:flex-row">
       <!-- Cuadro izquierdo -->
       <div class="left-content w-full lg:w-1/2 p-6">
+        <p class="webL_texto text-gray-500">Maximice su patrimonio con nuestro expertise</p>
         <p class="text-sm text-gray-500">Maximice su patrimonio con nuestro expertise</p>
+        <p class="text-sm text-gray-500">Maximice su patrimonio con nuestro expertise</p>
+
         <h2 class="text-6xl font-bold mt-6 mb-8">Asesoría Financiera e Inmobiliaria para Family Office</h2>
         <p class="text-gray-700">Somos una firma especializada en proporcionar asesoramiento financiero y empresarial a su Family Office. Nuestra experiencia y compromiso nos permiten ofrecer soluciones integrales para proteger y hacer crecer su patrimonio.</p>
         <button class="mt-8 inline-flex items-center px-6 py-3 border border-transparent text-base font-medium rounded-md text-white bg-blue-500 hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500">
